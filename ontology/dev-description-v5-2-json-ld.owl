@@ -35,17 +35,11 @@
   "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -77,45 +71,45 @@
   "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#YangDescription",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdGreen",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdGreen",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdOff",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdOff",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdOn",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdSetColor",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdSetColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#colorInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#colorInput"
   }, {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#colorInput",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#colorInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
     "@value" : "all"
@@ -129,137 +123,137 @@
     "@value" : "yellow"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#colorYangDesc"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#colorYangDesc"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#colorYangDesc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#colorYangDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "color parameter"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#deviceCategory",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "LED-LAMP"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#deviceDesc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "MQTT-Device identified by UUID"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#deviceUuid",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceUuid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "F97DF79-8A12-4F4F-8F69-6B8F3C2E78DD"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescBright",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescBright",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "request brightness value"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescColor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescColor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "set arbitrary LED color"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescGreen",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescGreen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Set the led color to green"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescSwitchOff",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescSwitchOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Switches the led off"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescSwitchOn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescSwitchOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Switches the led on"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcGetBright",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetBright",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescBright"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescBright"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcSetColor",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSetColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdSetColor"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdSetColor"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescColor"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescColor"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcSetGreen",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSetGreen",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdGreen"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdGreen"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescGreen"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescGreen"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcSwitchOff",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSwitchOff",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdOff"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescSwitchOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescSwitchOff"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcSwitchOn",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSwitchOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescSwitchOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescSwitchOn"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#mqttMethod",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#mqttTopic",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#myDevice",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#myDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcGetBright"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetBright"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSetColor"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSetColor"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSetGreen"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSetGreen"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSwitchOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSwitchOff"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSwitchOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSwitchOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService" : [ {
-    "@id" : "http://yang-netconf-mqtt#servNetconf"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servNetconf"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#deviceCategory"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceCategory"
   }, {
-    "@id" : "http://yang-netconf-mqtt#deviceDesc"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceDesc"
   }, {
-    "@id" : "http://yang-netconf-mqtt#deviceUuid"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceUuid"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opDescState",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opDescState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
     "@value" : "error"
   }, {
@@ -268,81 +262,81 @@
     "@value" : "successful"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttGreen",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttGreen",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdGreen"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdGreen"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "GREEN"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "led"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttOff",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttOff",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdOff"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "OFF"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "led"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttOn",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "ON"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "led"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttSetColor",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttSetColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdSetColor"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdSetColor"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#colorInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#colorInput"
   }, {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "color"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "led"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opState",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
     "@value" : "ERROR"
@@ -352,67 +346,67 @@
     "@value" : "OK"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#opDescState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opDescState"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#outDpBrightness",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#outDpBrightness",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint" ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "sensor/brightness/led01"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#paramYangDesc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#paramYangDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "parameter value"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servBrightness",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servBrightness",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcGetBright"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetBright"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint" : [ {
-    "@id" : "http://yang-netconf-mqtt#outDpBrightness"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#outDpBrightness"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servNetconf",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servNetconf",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcGetBright"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetBright"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSetColor"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSetColor"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSetGreen"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSetGreen"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSwitchOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSwitchOff"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcSwitchOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcSwitchOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation" : [ {
-    "@id" : "http://yang-netconf-mqtt#opMqttGreen"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttGreen"
   }, {
-    "@id" : "http://yang-netconf-mqtt#opMqttOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttOff"
   }, {
-    "@id" : "http://yang-netconf-mqtt#opMqttOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttOn"
   }, {
-    "@id" : "http://yang-netconf-mqtt#opMqttSetColor"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttSetColor"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService" : [ {
-    "@id" : "http://yang-netconf-mqtt#servBrightness"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servBrightness"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#uuidInput",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#deviceUuid"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceUuid"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidYangDesc"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidYangDesc"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#uuidYangDesc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidYangDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Target UUID for request"
   } ]
