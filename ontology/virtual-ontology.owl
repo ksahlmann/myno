@@ -1,0 +1,490 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingCommand"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasControllingCommand"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesMeasuringFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunction"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#PubSubOperation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasPubSubOperation"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#RestOperation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasRestOperation"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingCommand"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesControllingCommand"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringCommand"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesMeasuringCommand"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingCommand"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesControllingCommand"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringCommand"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesMeasuringCommand"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringService"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasMeasuringService"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasMeasuringFunction"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringCommand"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasMeasuringCommand"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#IdProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasId"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingService"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasControllingService"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasControllingFunction"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesControllingFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunction"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#PubSubOperation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasPubSubOperation"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#RestOperation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasRestOperation"
+  } ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunction",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Function",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunction",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Thing",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v3_2_0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno-vo"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#IdProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MqttOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#PubSubOperation"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#PubSubOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#RestOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesControllingCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#PubSubOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingCommand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesControllingFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunction"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesMeasuringCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#PubSubOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringCommand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#exposesMeasuringFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunction"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasControllingCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingCommand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasControllingFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunction"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasControllingService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#IdProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasMeasuringCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringCommand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasMeasuringFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunction"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasMeasuringService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasPubSubOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingService"
+  }, {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#PubSubOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasRestOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#ControllingService"
+  }, {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#MeasuringService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#RestOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation"
+  } ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+} ]
