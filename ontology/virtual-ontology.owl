@@ -215,9 +215,21 @@
     "@id" : "_:genid4"
   } ]
 }, {
+  "@id" : "http://www.w3.org/ns/sosa/Actuator",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Actuator"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#Sensor"
+  } ]
+}, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  }, {
     "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v3_2_0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
