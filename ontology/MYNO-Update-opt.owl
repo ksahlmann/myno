@@ -4,7 +4,7 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "base": "http://yang-netconf-mqtt#",
+    "base": "https://www.cs.uni-potsdam.de/bs/research/myno#",
     "onem2m": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#"
   },
   "@graph": [
@@ -116,7 +116,7 @@
       "@type": "owl:Class"
     },
     {
-      "@id": "http://yang-netconf-mqtt",
+      "@id": "https://www.cs.uni-potsdam.de/bs/research/myno",
       "@type": "owl:Ontology",
       "owl:imports": [
         {

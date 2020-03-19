@@ -80,7 +80,7 @@
   "@id" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -90,380 +90,380 @@
     "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#YangDescription",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdGetDeviceToken",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdGetDeviceToken",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdPubUpdateImage",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdPubUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#inputUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#inputUpdateImage"
   }, {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdPubUpdateManifest",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdPubUpdateManifest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#input_1_AppId"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_1_AppId"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_2_LinkOffset"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_2_LinkOffset"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_3_Hash"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_3_Hash"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_4_Size"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_4_Size"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_5_Version"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_5_Version"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_6_OldVersion"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_6_OldVersion"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_7_InnerSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_7_InnerSignature"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_8_DeviceNonce"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_8_DeviceNonce"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_9_OuterSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_9_OuterSignature"
   }, {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdRelayOff",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdRelayOff",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#cmdRelayOn",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdRelayOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputAppId",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputAppId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "AnwendungsID der Zielplattform"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputDeviceNonce",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputDeviceNonce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Input device nonce"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputHash",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputHash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Input Hash"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputInnerSignature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputInnerSignature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "inner signature"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputLinkOffset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputLinkOffset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Input Link Offset"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputOldVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputOldVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "old version"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputOuterSignature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputOuterSignature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "outer signature"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputSeqManifest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputSeqManifest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Input for Manifest"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputSize",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Size"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputUpdateImage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputUpdateImage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Update Image"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#descInputVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "version"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#deviceCategory",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "SETUP-1"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#deviceDesc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "MQTT-Device identified by UUID"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#deviceUuid",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceUuid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "%s"
   } ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescGetDeviceToken",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescGetDeviceToken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Get Token for MYNO Update"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescMoist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescMoist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Get Moisture of Sensor"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescPubUpdateImage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescPubUpdateImage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Publish Update Image"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescPubUpdateManifest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescPubUpdateManifest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Publish Update Manifest to Device"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescRelayOff",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescRelayOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Relay an Schalten"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescRelayOn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescRelayOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Relay aus Schalten"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcDescTemperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Reads the Temperature from the enviroment"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcGetDeviceToken",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetDeviceToken",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdGetDeviceToken"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdGetDeviceToken"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescGetDeviceToken"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescGetDeviceToken"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcGetMoisture",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetMoisture",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescMoist"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescMoist"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcGetTemperature",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetTemperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescTemperature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescTemperature"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcPubUpdateImage",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcPubUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdPubUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdPubUpdateImage"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescPubUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescPubUpdateImage"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcPubUpdateManifest",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcPubUpdateManifest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdPubUpdateManifest"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdPubUpdateManifest"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescPubUpdateManifest"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescPubUpdateManifest"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcRelayOff",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcRelayOff",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdRelayOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdRelayOff"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescRelayOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescRelayOff"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#funcRelayOn",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcRelayOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdRelayOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdRelayOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcDescRelayOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescRelayOn"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#hasDatatype",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#hasSubStructure",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasSubStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#inputUpdateImage",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#inputUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propUpdateImage"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputUpdateImage"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_1_AppId",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_1_AppId",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propAppID"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propAppID"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputAppId"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputAppId"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_2_LinkOffset",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_2_LinkOffset",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propLinkOffset"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propLinkOffset"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputLinkOffset"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputLinkOffset"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_3_Hash",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_3_Hash",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propHash"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propHash"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputHash"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputHash"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_4_Size",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_4_Size",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propSize"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propSize"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputSize"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputSize"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_5_Version",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_5_Version",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propVersion"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propVersion"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputVersion"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputVersion"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_6_OldVersion",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_6_OldVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propOldVersion"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propOldVersion"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputOldVersion"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputOldVersion"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_7_InnerSignature",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_7_InnerSignature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propInnerSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propInnerSignature"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputInnerSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputInnerSignature"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_8_DeviceNonce",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_8_DeviceNonce",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propDeviceNonce"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propDeviceNonce"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputDeviceNonce"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputDeviceNonce"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#input_9_OuterSignature",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_9_OuterSignature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#propOuterSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propOuterSignature"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#descInputOuterSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#descInputOuterSignature"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#mqttMethod",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#mqttTopic",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#myDevice",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#myDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcGetDeviceToken"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetDeviceToken"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcGetMoisture"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetMoisture"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcGetTemperature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetTemperature"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcPubUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcPubUpdateImage"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcPubUpdateManifest"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcPubUpdateManifest"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcRelayOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcRelayOff"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcRelayOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcRelayOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService" : [ {
-    "@id" : "http://yang-netconf-mqtt#servNetconf"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servNetconf"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#deviceCategory"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceCategory"
   }, {
-    "@id" : "http://yang-netconf-mqtt#deviceDesc"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceDesc"
   }, {
-    "@id" : "http://yang-netconf-mqtt#deviceUuid"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceUuid"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opDescLedState",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opDescLedState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
     "@value" : "error"
   }, {
@@ -472,8 +472,8 @@
     "@value" : "successful"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opDescState",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opDescState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
     "@value" : "10 successful"
   }, {
@@ -500,25 +500,25 @@
     "@value" : "28 image invalid"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opGetDeviceToken",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opGetDeviceToken",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdGetDeviceToken"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdGetDeviceToken"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "GET-DEVICE-TOKEN"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "yang/update/token"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opLedState",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opLedState",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
     "@value" : "ERROR"
@@ -528,100 +528,100 @@
     "@value" : "OK"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#opDescLedState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opDescLedState"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttPubUpdateImage",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttPubUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdPubUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdPubUpdateImage"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#inputUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#inputUpdateImage"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "PUB-UPDATE-IMAGE"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "yang/update/image"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttPubUpdateManifest",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttPubUpdateManifest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdPubUpdateManifest"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdPubUpdateManifest"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#input_1_AppId"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_1_AppId"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_2_LinkOffset"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_2_LinkOffset"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_3_Hash"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_3_Hash"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_4_Size"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_4_Size"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_5_Version"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_5_Version"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_6_OldVersion"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_6_OldVersion"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_7_InnerSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_7_InnerSignature"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_8_DeviceNonce"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_8_DeviceNonce"
   }, {
-    "@id" : "http://yang-netconf-mqtt#input_9_OuterSignature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#input_9_OuterSignature"
   }, {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "PUB-UPDATE-MANIFEST"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "yang/update/manifest"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttRelayOff",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttRelayOff",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdRelayOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdRelayOff"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "relayOff"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "relay"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opMqttRelayOn",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttRelayOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
-    "@id" : "http://yang-netconf-mqtt#cmdRelayOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#cmdRelayOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidInput"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
-    "@id" : "http://yang-netconf-mqtt#opState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
-  "http://yang-netconf-mqtt#mqttMethod" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttMethod" : [ {
     "@value" : "relayOn"
   } ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "relay"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#opState",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
     "@value" : "10_OK"
@@ -649,223 +649,223 @@
     "@value" : "28_IMAGE-INVALID"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#opDescState"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opDescState"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#outDpMoisture",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#outDpMoisture",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint" ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "sensor/moisture/%s"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#outDpTemperature",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#outDpTemperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint" ],
-  "http://yang-netconf-mqtt#mqttTopic" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
     "@value" : "sensor/temperature/%s"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propAppID",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propAppID",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propDeviceNonce",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propDeviceNonce",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#int",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propHash",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propHash",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propInnerSignature",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propInnerSignature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#hexBinary",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propLinkOffset",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propLinkOffset",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#int",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propOldVersion",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propOldVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#int",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propOuterSignature",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propOuterSignature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#hexBinary",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propSize",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propSize",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#int",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propUpdateImage",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#hexBinary",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#propVersion",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "http://yang-netconf-mqtt#hasDatatype" : [ {
+  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#int",
     "@value" : ""
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_1",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_1",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_2",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_2",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_3",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_3",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_4",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_4",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_5",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_5",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_6",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_6",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_7",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_7",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_8",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_8",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#rdf:_9",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_9",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#member"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servGetDeviceToken",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servGetDeviceToken",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcGetDeviceToken"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetDeviceToken"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation" : [ {
-    "@id" : "http://yang-netconf-mqtt#opGetDeviceToken"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opGetDeviceToken"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servMoisture",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servMoisture",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcGetMoisture"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetMoisture"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint" : [ {
-    "@id" : "http://yang-netconf-mqtt#outDpMoisture"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#outDpMoisture"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servNetconf",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servNetconf",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcRelayOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcRelayOff"
   }, {
-    "@id" : "http://yang-netconf-mqtt#funcRelayOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcRelayOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation" : [ {
-    "@id" : "http://yang-netconf-mqtt#opMqttRelayOff"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttRelayOff"
   }, {
-    "@id" : "http://yang-netconf-mqtt#opMqttRelayOn"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttRelayOn"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService" : [ {
-    "@id" : "http://yang-netconf-mqtt#servGetDeviceToken"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servGetDeviceToken"
   }, {
-    "@id" : "http://yang-netconf-mqtt#servMoisture"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servMoisture"
   }, {
-    "@id" : "http://yang-netconf-mqtt#servPubUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servPubUpdateImage"
   }, {
-    "@id" : "http://yang-netconf-mqtt#servPubUpdateManifest"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servPubUpdateManifest"
   }, {
-    "@id" : "http://yang-netconf-mqtt#servTemperature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servTemperature"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servPubUpdateImage",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servPubUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcPubUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcPubUpdateImage"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation" : [ {
-    "@id" : "http://yang-netconf-mqtt#opMqttPubUpdateImage"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttPubUpdateImage"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servPubUpdateManifest",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servPubUpdateManifest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcPubUpdateManifest"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcPubUpdateManifest"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation" : [ {
-    "@id" : "http://yang-netconf-mqtt#opMqttPubUpdateManifest"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttPubUpdateManifest"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#servTemperature",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#servTemperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
-    "@id" : "http://yang-netconf-mqtt#funcGetTemperature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcGetTemperature"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint" : [ {
-    "@id" : "http://yang-netconf-mqtt#outDpTemperature"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#outDpTemperature"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#uuidInput",
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
-    "@id" : "http://yang-netconf-mqtt#deviceUuid"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceUuid"
   } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
-    "@id" : "http://yang-netconf-mqtt#uuidYangDesc"
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidYangDesc"
   } ]
 }, {
-  "@id" : "http://yang-netconf-mqtt#uuidYangDesc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#uuidYangDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "Target UUID for request"
   } ]
