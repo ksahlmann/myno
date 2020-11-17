@@ -28,5 +28,5 @@ The subfolder *tools* contains different tools:
 
 
 ### License
-This project is licensed under the terms of the Apache License 2.0
+This project is licensed under the terms of the GNU GPLv3 License.
 
