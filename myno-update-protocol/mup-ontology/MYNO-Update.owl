@@ -44,6 +44,9 @@
   "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -80,7 +83,7 @@
   "@id" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno",
+  "@id" : "http://yang-netconf-mqtt",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -226,11 +229,11 @@
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#deviceUuid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
     "@value" : "%s"
-  } ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@value" : ""
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescGetDeviceToken",
@@ -260,13 +263,13 @@
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescRelayOff",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
-    "@value" : "Relay an Schalten"
+    "@value" : "Relay anschalten"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescRelayOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.cs.uni-potsdam.de/bs/research/myno#YangDescription" ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
-    "@value" : "Relay aus Schalten"
+    "@value" : "Relay ausschalten"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescTemperature",
@@ -332,11 +335,14 @@
     "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#funcDescRelayOn"
   } ]
 }, {
-  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#hasSubStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#inDpUpdateImage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#InputDataPoint" ],
+  "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
+    "@value" : "yang/update/image"
+  } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#inputUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
@@ -539,6 +545,9 @@
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
     "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#inputUpdateImage"
   } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInputDataPoint" : [ {
+    "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#inDpUpdateImage"
+  } ],
   "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
     "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opState"
   } ],
@@ -546,7 +555,7 @@
     "@value" : "PUB-UPDATE-IMAGE"
   } ],
   "https://www.cs.uni-potsdam.de/bs/research/myno#mqttTopic" : [ {
-    "@value" : "yang/update/image"
+    "@value" : "yang/update"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#opMqttPubUpdateManifest",
@@ -666,70 +675,62 @@
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propAppID",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propDeviceNonce",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propHash",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propInnerSignature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#hexBinary",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#hexBinary"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propLinkOffset",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propOldVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propOuterSignature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#hexBinary",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#hexBinary"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propSize",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propUpdateImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#hexBinary",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#hexBinary"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#propVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
-  "https://www.cs.uni-potsdam.de/bs/research/myno#hasDatatype" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : ""
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
   "@id" : "https://www.cs.uni-potsdam.de/bs/research/myno#rdf:_1",

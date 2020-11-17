@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" href='/static/style.css' />
+	<link rel="stylesheet" href='/static/minimal buttons.css' />
+	<script src="/static/ajax.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<script>
+	$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+</script>
+
+<form action="/" method="post">
+    <button name="forwardBtn" type="submit" class="button button_secondary">Get Devices</button>
+</form>
+
+<br>
+<hr>
+		
+  {{ things_list }}
+  
+<br>
+<hr>
+<br>
+  	
+  {{ selected_rpc_text }}
+  
+<br>
+
+<br>
+<hr>
+<br>
+
+<div class='notification' id='notification'>  </div> <br>
+<div class='error' id='error'>  </div> <br>
+
+</body>
+</html>
+

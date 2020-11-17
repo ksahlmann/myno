@@ -69,6 +69,10 @@
       "@type": "owl:DatatypeProperty"
     },
     {
+      "@id": "onem2m:hasDataType",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
       "@id": "onem2m:hasFunctionality",
       "@type": "owl:AnnotationProperty"
     },
@@ -116,7 +120,7 @@
       "@type": "owl:Class"
     },
     {
-      "@id": "https://www.cs.uni-potsdam.de/bs/research/myno",
+      "@id": "http://yang-netconf-mqtt",
       "@type": "owl:Ontology",
       "owl:imports": [
         {
@@ -331,8 +335,10 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "onem2m:hasValue": "%s",
-      "base:hasDatatype": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      },
+      "onem2m:hasValue": "%s"
     },
     {
       "@id": "base:funcDescGetDeviceToken",
@@ -372,7 +378,7 @@
         "owl:NamedIndividual",
         "base:YangDescription"
       ],
-      "onem2m:hasValue": "Relay an Schalten"
+      "onem2m:hasValue": "Relay anschalten"
     },
     {
       "@id": "base:funcDescRelayOn",
@@ -380,7 +386,7 @@
         "owl:NamedIndividual",
         "base:YangDescription"
       ],
-      "onem2m:hasValue": "Relay aus Schalten"
+      "onem2m:hasValue": "Relay ausschalten"
     },
     {
       "@id": "base:funcDescTemperature",
@@ -476,12 +482,16 @@
       }
     },
     {
-      "@id": "base:hasDatatype",
-      "@type": "owl:DatatypeProperty"
-    },
-    {
       "@id": "base:hasSubStructure",
       "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "base:inDpUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:InputDataPoint"
+      ],
+      "base:mqttTopic": "yang/update/image"
     },
     {
       "@id": "base:inputUpdateImage",
@@ -743,11 +753,14 @@
       "onem2m:hasInput": {
         "@id": "base:inputUpdateImage"
       },
+      "onem2m:hasInputDataPoint": {
+        "@id": "base:inDpUpdateImage"
+      },
       "onem2m:hasOperationState": {
         "@id": "base:opState"
       },
       "base:mqttMethod": "PUB-UPDATE-IMAGE",
-      "base:mqttTopic": "yang/update/image"
+      "base:mqttTopic": "yang/update"
     },
     {
       "@id": "base:opMqttPubUpdateManifest",
@@ -878,7 +891,9 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      }
     },
     {
       "@id": "base:propDeviceNonce",
@@ -886,9 +901,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:int",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
       }
     },
     {
@@ -897,7 +911,9 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      }
     },
     {
       "@id": "base:propInnerSignature",
@@ -905,9 +921,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:hexBinary",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:hexBinary"
       }
     },
     {
@@ -916,9 +931,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:int",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
       }
     },
     {
@@ -927,9 +941,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:int",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
       }
     },
     {
@@ -938,9 +951,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:hexBinary",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:hexBinary"
       }
     },
     {
@@ -949,9 +961,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:int",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
       }
     },
     {
@@ -960,9 +971,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:hexBinary",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:hexBinary"
       }
     },
     {
@@ -971,9 +981,8 @@
         "owl:NamedIndividual",
         "onem2m:ThingProperty"
       ],
-      "base:hasDatatype": {
-        "@type": "xsd:int",
-        "@value": ""
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
       }
     },
     {

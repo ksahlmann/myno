@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    
+    } 
+    
+.thing {
+	font-family: Arial;
+	font-size:24px;
+	display:inline
+}
+    
+    
+.uuid {
+	font-family: Courier;
+	color: gray;
+	font-size:14px;
+	display:inline
+}
+
+p { margin:0;}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+form {
+	/*background: red;*/
+	margin: 0;
+	padding: 0;
+}
+
+#funcPubUpdateManifest input[type="text"] {
+	border: 1;
+	width: 14.5rem;
+	height: 2rem;
+	margin: 0 15 0 5;
+	background: white;
+	border-radius: 5px;
+	padding-left: 1rem;
+}
+
+#funcPubUpdateManifest input[type="number"] {
+	border: 1;
+	width: 14.5rem;
+	height: 2rem;
+	margin: 0 15 0 5;
+	background: white;
+	border-radius: 5px;
+	padding-left: 1rem;
+}
+
+.notification {
+	color: #111111;
+	background-color: #EEEEEE;
+	border-radius: 0.317rem;
+	padding: 0.75rem 1rem;
+	opacity:0;
+}
+
+.error {
+	color: white;
+	background-color: #FF7744;
+	border-radius: 0.317rem;
+	padding: 0.75rem 1rem;
+	opacity:0;
+}
+
+.sensor {
+	display: inline-block;
+  	margin: 0 8 8 0;
+  	padding: 0.75rem 1rem;
+	border: 1;
+	border-radius: 0.317rem;
+	color: #000;
+	text-decoration: none;
+	background-color: #eee;
+	font-weight: 700;
+	font-size: 1rem;
+  	line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+fieldset {
+    border: none;
+  	padding: 0.15rem;
+  }
