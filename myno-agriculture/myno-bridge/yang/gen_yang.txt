@@ -1,0 +1,910 @@
+module mqtt-SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DDBoardName {
+  namespace "https://www.cs.uni-potsdam.de/bs/research/myno/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DDBoardName";
+  prefix SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DDBoardName;
+
+  rpc funcConfMoisture {
+    description
+      "configure moisture sensor for events";
+    input {
+      leaf input_1_ConfEvName {
+        description
+          "event name caused by configuration";
+        type string;
+      }
+      leaf input_2_ConfOperator {
+        description
+          "describes configuration operators";
+        type enumeration {
+          enum >=;
+          enum ==;
+          enum <;
+          enum >;
+          enum <=;
+        }
+      }
+      leaf input_3_ConfMoisture {
+        description
+          "threshold values for moisture sensor";
+        type int {
+          range "0..100";
+        }
+      }
+      leaf input_4_ConfInterval {
+        description
+          "interval for event configuration";
+        type int;
+      }
+      leaf input_5_ConfDuration {
+        description
+          "duration for event configuration";
+        type int;
+      }
+      leaf input_6_ConfCrud {
+        description
+          "select CRUD operations for events";
+        type enumeration {
+          enum CREATE;
+          enum UPDATE;
+          enum DELETE;
+          enum READ;
+        }
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcPump_1Off {
+    description
+      "turn pump 1 off";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcAutoMoisture {
+    description
+      "automation rule for moisture sensor";
+    input {
+      leaf inputAutoMoisture {
+        description
+          "automation for moisture";
+        type string;
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcPump_1On {
+    description
+      "turn pump 1 on";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcLed_1Rgb {
+    description
+      "set RGB values for led 1";
+    input {
+      leaf rgbinput {
+        description
+          "RGB parameter for led_1";
+        type union {
+          type inputRed {
+            range "0..255";
+          }
+          type inputBlue {
+            range "0..255";
+          }
+          type inputGreen {
+            range "0..255";
+          }
+        }
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcConfTemperature {
+    description
+      "configure event for temperature sensor";
+    input {
+      leaf input_1_ConfEvName {
+        description
+          "event name caused by configuration";
+        type string;
+      }
+      leaf input_2_ConfOperator {
+        description
+          "describes configuration operators";
+        type enumeration {
+          enum >=;
+          enum ==;
+          enum <;
+          enum >;
+          enum <=;
+        }
+      }
+      leaf input_3_ConfTemperature {
+        description
+          "threshold values for temperature sensor";
+        type int {
+          range "-20..100";
+        }
+      }
+      leaf input_4_ConfInterval {
+        description
+          "interval for event configuration";
+        type int;
+      }
+      leaf input_5_ConfDuration {
+        description
+          "duration for event configuration";
+        type int;
+      }
+      leaf input_6_ConfCrud {
+        description
+          "select CRUD operations for events";
+        type enumeration {
+          enum CREATE;
+          enum UPDATE;
+          enum DELETE;
+          enum READ;
+        }
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcLed_1On {
+    description
+      "turn led 1 on";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcLed_1Off {
+    description
+      "turn led 1 off";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  container device {
+    description
+      "MQTT-Device identified by UUID";
+    list device-id {
+      key "uuid";
+      leaf uuid {
+        default "SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+        type string;
+      }
+    }
+    leaf device-category {
+      description
+        "Identifies the device category";
+      type string;
+    }
+    container telemetry {
+      leaf funcGetPressure {
+        description
+          "Get pressure from sensor";
+        container datapoint {
+          leaf funcGetPressure0 {
+            default "sensor/pressure/pressure_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+            units "hectopascal;hPa";
+          }
+        }
+      }
+      leaf funcGetHumidity {
+        description
+          "Get humidity from sensor";
+        container datapoint {
+          leaf funcGetHumidity0 {
+            default "sensor/humidity/humidity_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+            units "percent;%%";
+          }
+        }
+      }
+      leaf funcEvMoisture {
+        description
+          "event function for moisture sensor";
+        container datapoint {
+          leaf funcEvMoisture0 {
+            default "event/sensor/moisture/moisture_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+          }
+        }
+      }
+      leaf funcGetBrightness {
+        description
+          "Get brightness from sensor";
+        container datapoint {
+          leaf funcGetBrightness0 {
+            default "sensor/brightness/brightness_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+            units "lux;lx";
+          }
+        }
+      }
+      leaf funcGetRainDetect {
+        description
+          "Get rain detection signal from sensor";
+        container datapoint {
+          leaf funcGetRainDetect0 {
+            default "sensor/rain/rain_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+            units "percent;%%";
+          }
+        }
+      }
+      leaf funcEvTemperature {
+        description
+          "event function for temperature sensor";
+        container datapoint {
+          leaf funcEvTemperature0 {
+            default "event/sensor/temperature/temperature_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+          }
+        }
+      }
+      leaf funcGetMoisture {
+        description
+          "Get moisture from sensor";
+        container datapoint {
+          leaf funcGetMoisture0 {
+            default "sensor/moisture/moisture_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+            units "percent;%%";
+          }
+        }
+      }
+      leaf funcGetTemperature {
+        description
+          "Get Temperature from sensor";
+        container datapoint {
+          leaf funcGetTemperature0 {
+            default "sensor/temperature/temperature_1/SIMULATOR1-8A12-4F4F-8F69-6B8F3C2E78DD";
+            type string;
+            units "degreeCelsius;°C";
+          }
+        }
+      }
+    }
+  }
+}
+module mqtt-SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RRBoardName {
+  namespace "https://www.cs.uni-potsdam.de/bs/research/myno/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RRBoardName";
+  prefix SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RRBoardName;
+
+  rpc funcConfMoisture {
+    description
+      "configure moisture sensor for events";
+    input {
+      leaf input_1_ConfEvName {
+        description
+          "event name caused by configuration";
+        type string;
+      }
+      leaf input_2_ConfOperator {
+        description
+          "describes configuration operators";
+        type enumeration {
+          enum ==;
+          enum <;
+          enum <=;
+          enum >=;
+          enum >;
+        }
+      }
+      leaf input_3_ConfMoisture {
+        description
+          "threshold values for moisture sensor";
+        type int {
+          range "0..100";
+        }
+      }
+      leaf input_4_ConfInterval {
+        description
+          "interval for event configuration";
+        type int;
+      }
+      leaf input_5_ConfDuration {
+        description
+          "duration for event configuration";
+        type int;
+      }
+      leaf input_6_ConfCrud {
+        description
+          "select CRUD operations for events";
+        type enumeration {
+          enum UPDATE;
+          enum DELETE;
+          enum READ;
+          enum CREATE;
+        }
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcPump_1Off {
+    description
+      "turn pump 1 off";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcAutoMoisture {
+    description
+      "automation rule for moisture sensor";
+    input {
+      leaf inputAutoMoisture {
+        description
+          "automation for moisture";
+        type string;
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcPump_1On {
+    description
+      "turn pump 1 on";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcLed_1Rgb {
+    description
+      "set RGB values for led 1";
+    input {
+      leaf rgbinput {
+        description
+          "RGB parameter for led_1";
+        type union {
+          type inputBlue {
+            range "0..255";
+          }
+          type inputRed {
+            range "0..255";
+          }
+          type inputGreen {
+            range "0..255";
+          }
+        }
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcConfTemperature {
+    description
+      "configure event for temperature sensor";
+    input {
+      leaf input_1_ConfEvName {
+        description
+          "event name caused by configuration";
+        type string;
+      }
+      leaf input_2_ConfOperator {
+        description
+          "describes configuration operators";
+        type enumeration {
+          enum ==;
+          enum <;
+          enum <=;
+          enum >=;
+          enum >;
+        }
+      }
+      leaf input_3_ConfTemperature {
+        description
+          "threshold values for temperature sensor";
+        type int {
+          range "-20..100";
+        }
+      }
+      leaf input_4_ConfInterval {
+        description
+          "interval for event configuration";
+        type int;
+      }
+      leaf input_5_ConfDuration {
+        description
+          "duration for event configuration";
+        type int;
+      }
+      leaf input_6_ConfCrud {
+        description
+          "select CRUD operations for events";
+        type enumeration {
+          enum UPDATE;
+          enum DELETE;
+          enum READ;
+          enum CREATE;
+        }
+      }
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcLed_1On {
+    description
+      "turn led 1 on";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  rpc funcLed_1Off {
+    description
+      "turn led 1 off";
+    input {
+      leaf uuidInput {
+        description
+          "Target UUID for request";
+        type string;
+      }
+    }
+    output {
+      leaf retval {
+        type enumeration {
+          enum ERROR {
+            description
+              "error";
+          }
+          enum NOOP {
+            description
+              "nothing to do";
+          }
+          enum OK {
+            description
+              "successful";
+          }
+        }
+      }
+    }
+  }
+
+  container device {
+    description
+      "MQTT-Device identified by UUID";
+    list device-id {
+      key "uuid";
+      leaf uuid {
+        default "SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+        type string;
+      }
+    }
+    leaf device-category {
+      description
+        "Identifies the device category";
+      type string;
+    }
+    container telemetry {
+      leaf funcGetPressure {
+        description
+          "Get pressure from sensor";
+        container datapoint {
+          leaf funcGetPressure0 {
+            default "sensor/pressure/pressure_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+            units "hectopascal;hPa";
+          }
+        }
+      }
+      leaf funcGetHumidity {
+        description
+          "Get humidity from sensor";
+        container datapoint {
+          leaf funcGetHumidity0 {
+            default "sensor/humidity/humidity_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+            units "percent;%%";
+          }
+        }
+      }
+      leaf funcEvMoisture {
+        description
+          "event function for moisture sensor";
+        container datapoint {
+          leaf funcEvMoisture0 {
+            default "event/sensor/moisture/moisture_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+          }
+        }
+      }
+      leaf funcGetBrightness {
+        description
+          "Get brightness from sensor";
+        container datapoint {
+          leaf funcGetBrightness0 {
+            default "sensor/brightness/brightness_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+            units "lux;lx";
+          }
+        }
+      }
+      leaf funcGetRainDetect {
+        description
+          "Get rain detection signal from sensor";
+        container datapoint {
+          leaf funcGetRainDetect0 {
+            default "sensor/rain/rain_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+            units "percent;%%";
+          }
+        }
+      }
+      leaf funcEvTemperature {
+        description
+          "event function for temperature sensor";
+        container datapoint {
+          leaf funcEvTemperature0 {
+            default "event/sensor/temperature/temperature_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+          }
+        }
+      }
+      leaf funcGetMoisture {
+        description
+          "Get moisture from sensor";
+        container datapoint {
+          leaf funcGetMoisture0 {
+            default "sensor/moisture/moisture_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+            units "percent;%%";
+          }
+        }
+      }
+      leaf funcGetTemperature {
+        description
+          "Get Temperature from sensor";
+        container datapoint {
+          leaf funcGetTemperature0 {
+            default "sensor/temperature/temperature_1/SIMULATOR2-5B34-7D7D-3K87-5H2G6U5K19RR";
+            type string;
+            units "degreeCelsius;°C";
+          }
+        }
+      }
+    }
+  }
+}

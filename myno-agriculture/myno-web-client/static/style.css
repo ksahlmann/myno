@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    
+    } 
+    
+.thing {
+	font-family: Arial;
+	font-size:24px;
+	/*display:inline*/
+
+}
+.uuid {
+	font-family: Courier;
+	color: gray;
+	font-size:14px;
+	display:inline
+}
+
+p { margin:0;}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0,0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+form {
+    display: inline;
+  	/*margin: 0 8 0 0;*/
+}
+
+.notification {
+	color: #111111;
+	background-color: #EEEEEE;
+	border-radius: 0.317rem;
+	padding: 0.75rem 1rem;
+	opacity:0;
+}
+.rpc {
+	color: #111111;
+	background-color: #EEEEEE;
+	border-radius: 0.317rem;
+	padding: 0.75rem 1rem;
+	opacity:0;
+}
+.error {
+	color: white;
+	background-color: #FF7744;
+	border-radius: 0.317rem;
+	padding: 0.75rem 1rem;
+	opacity:0;
+}
+
+.sensor {
+	display: inline-block;
+  	margin: 8 8 8 8;
+  	padding: 0.75rem 1rem;
+	border: 1;
+	border-radius: 0.317rem;
+	color: #000;
+	text-decoration: none;
+	background-color: #eee;
+	font-weight: 700;
+	font-size: 1rem;
+  	line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.sensor-event-clear {
+	display: inline-block;
+  	margin: 8 8 8 8;
+  	padding: 0.75rem 1rem;
+	border: 1;
+	border-radius: 0.317rem;
+	color: #000;
+	text-decoration: none;
+	background-color: #67E0B9;
+	font-weight: 700;
+	font-size: 1rem;
+  	line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.sensor-event-triggered {
+	display: inline-block;
+  	margin: 8 8 8 8;
+  	padding: 0.75rem 1rem;
+	border: 1;
+	border-radius: 0.317rem;
+	color: #000;
+	text-decoration: none;
+	background-color: #ffdf00;
+	font-weight: 700;
+	font-size: 1rem;
+  	line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+.events {
+	color: black;
+	background-color: #f7e460;
+	border-radius: 0.317rem;
+	padding: 0.75rem 1rem;
+	opacity:0;
+}
+fieldset {
+    border: 0;
+  	padding: 0.15rem;
+  }
+
+hr.thingslist {
+    border: 0;
+    height: 0;
+    border-top: 1px dotted rgba(0, 0, 0,0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hidden_rpc {
+    display: none;
+}
+
+.selector{
+    display: block;
+}

@@ -1,0 +1,2156 @@
+[
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpPressure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"
+    ],
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+      {
+        "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "sensor/pressure/pressure_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servTemperature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetTemperature"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpTemperature"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcLed_1On",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdLed_1On"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescLed_1On"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servEvTemperature",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcEvTemperature"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpEvTemperature"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#deviceCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "VirtualDeviceBoard"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#propConfInterval",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servRainDetect",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetRainDetect"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpRainDetect"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcPump_1Off",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdPump_1Off"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescPump_1Off"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#input_3_ConfMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#propConfMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#moistureYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdLed_1Off",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescPump_1On",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "turn pump 1 on"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#inputBlue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "255"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "0"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#rgbinput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubStructure": [
+      {
+        "@id": "http://yang-netconf-mqtt#inputGreen"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#inputRed"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#inputBlue"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#rgbYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescConfTemperature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "configure event for temperature sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescConfMoisture",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "configure moisture sensor for events"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpRainDetect",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+      {
+        "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/percent"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "sensor/rain/rain_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttPump_1Off",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdPump_1Off"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "OFF"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "actuator/pump/pump_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescRainDetect",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Get rain detection signal from sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpEvMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "event/sensor/moisture/moisture_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescTemperature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Get Temperature from sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#autoMoistureYangDesc",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "automation for moisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#mqttTopic",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescPressure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Get pressure from sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#mqttMethod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#moistureEvYangDesc",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "event name caused by configuration"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttLed_1Off",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdLed_1Off"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "OFF"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "actuator/led/led_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcLed_1Rgb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdLed_1Rgb"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescLed_1Rgb"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#input_2_ConfOperator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern": [
+      {
+        "@value": ">="
+      },
+      {
+        "@value": "<"
+      },
+      {
+        "@value": ">"
+      },
+      {
+        "@value": "=="
+      },
+      {
+        "@value": "<="
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#confOperatorYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#propConfEvName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/percent",
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/symbol": [
+      {
+        "@value": "%%"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/symbol",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescEvMoisture",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "event function for moisture sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescPump_1Off",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "turn pump 1 off"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#input_3_ConfTemperature",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#propConfTemperature"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#temperatureYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#deviceUuid",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescLed_1Off",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "turn led 1 off"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcAutoMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#AutomationFunctionality"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdAutoMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescAutoMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttAutoMoisture",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdAutoMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#inputAutoMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "AUTOMATION"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "automation/sensor/moisture/moisture_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#YangDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcConfMoisture",
+    "@type": [
+      "http://yang-netconf-mqtt#ConfigurationFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdConfMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescConfMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpEvTemperature",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "event/sensor/temperature/temperature_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttConfTemperature",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdConfTemperature"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#input_6_ConfCrud"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_1_ConfEvName"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_3_ConfTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_2_ConfOperator"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_4_ConfInterval"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_5_ConfDuration"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "CONFIGEVENT"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "config/sensor/temperature/temperature_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdConfMoisture",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#input_6_ConfCrud"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_1_ConfEvName"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_4_ConfInterval"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_5_ConfDuration"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_2_ConfOperator"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_3_ConfMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcGetTemperature",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescTemperature"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#temperatureYangDesc",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "threshold values for temperature sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opState",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern": [
+      {
+        "@value": "OK"
+      },
+      {
+        "@value": "NOOP"
+      },
+      {
+        "@value": "ERROR"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#opDescState"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servVDnetconf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetHumidity"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetRainDetect"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcEvMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetBrightness"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcConfMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcLed_1Off"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcEvTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetPressure"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcAutoMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcPump_1Off"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcLed_1On"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcPump_1On"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcLed_1Rgb"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcConfTemperature"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation": [
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttAutoMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttLed_1Off"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttConfTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttPump_1On"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttLed_1On"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttPump_1Off"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttConfMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#opMqttLed_1Rgb"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService": [
+      {
+        "@id": "http://yang-netconf-mqtt#servPressure"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#servEvMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#servEvTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#servTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#servRainDetect"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#servHumidity"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#servMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#servBrightness"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubStructure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescEvTemperature",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "event function for temperature sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#virtualDevice",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcConfTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetBrightness"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetPressure"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcLed_1On"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcAutoMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcLed_1Off"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetRainDetect"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetHumidity"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcPump_1On"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcEvMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcPump_1Off"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcConfMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcEvTemperature"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#funcLed_1Rgb"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService": [
+      {
+        "@id": "http://yang-netconf-mqtt#servVDnetconf"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#deviceUuid"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#deviceDesc"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#deviceCategory"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttLed_1On",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdLed_1On"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "actuator/led/led_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal",
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/symbol": [
+      {
+        "@value": "hPa"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#uuidYangDesc",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Target UUID for request"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servHumidity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetHumidity"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpHumidity"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttConfMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdConfMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#input_3_ConfMoisture"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_6_ConfCrud"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_5_ConfDuration"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_1_ConfEvName"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_2_ConfOperator"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_4_ConfInterval"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "CONFIGEVENT"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "config/sensor/moisture/moisture_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#durYangDesc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "duration for event configuration"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcGetMoisture",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpBrightness",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+      {
+        "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/lux"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "sensor/brightness/brightness_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servBrightness",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetBrightness"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpBrightness"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#input_1_ConfEvName",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#propConfEvName"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#temperatureEvYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#uuidInput",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#deviceUuid"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#inputGreen",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "255"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "0"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpHumidity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"
+    ],
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+      {
+        "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/percent"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "sensor/humidity/humidity_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcEvTemperature",
+    "@type": [
+      "http://yang-netconf-mqtt#EventFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescEvTemperature"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcGetPressure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescPressure"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttPump_1On",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdPump_1On"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "actuator/pump/pump_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdConfTemperature",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#input_2_ConfOperator"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_5_ConfDuration"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_6_ConfCrud"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_4_ConfInterval"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_1_ConfEvName"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#input_3_ConfTemperature"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescLed_1Rgb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "set RGB values for led 1"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#rgbYangDesc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "RGB parameter for led_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescHumidity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Get humidity from sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdLed_1Rgb",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#rgbinput"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#crudYangDesc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "select CRUD operations for events"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius",
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/symbol": [
+      {
+        "@value": "°C"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0"
+      },
+      {
+        "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      },
+      {
+        "@id": "http://www.w3.org/2006/time#2016"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/lux",
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/symbol": [
+      {
+        "@value": "lx"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#moistureYangDesc",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "threshold values for moisture sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#input_5_ConfDuration",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+      "http://www.w3.org/2006/time#Duration",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#propConfDuration"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#durYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opMqttLed_1Rgb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdLed_1Rgb"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#rgbinput"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState": [
+      {
+        "@id": "http://yang-netconf-mqtt#opState"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttMethod": [
+      {
+        "@value": "RGB"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "actuator/led/led_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Get moisture from sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcLed_1Off",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdLed_1Off"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescLed_1Off"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#propConfMoisture",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive": [
+      {
+        "@value": "100"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive": [
+      {
+        "@value": "0"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#input_4_ConfInterval",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2006/time#Interval"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#propConfInterval"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#intervallYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcGetBrightness",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescBrightness"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdLed_1On",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdPump_1Off",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescAutoMoisture",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "automation rule for moisture sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servPressure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcGetPressure"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpPressure"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#deviceDesc",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Virtual MQTT-Device identified by UUID"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#propConfTemperature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive": [
+      {
+        "@value": 100
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive": [
+      {
+        "@value": -20
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#propConfDuration",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcEvMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#EventFunctionality"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescEvMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescLed_1On",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "turn led 1 on"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#inputRed",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "255"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "0"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#EventFunctionality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Functionality"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdAutoMoisture",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      },
+      {
+        "@id": "http://yang-netconf-mqtt#inputAutoMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#temperatureEvYangDesc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "event name caused by configuration"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#ConfigurationFunctionality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Functionality"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#servEvMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcEvMoisture"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint": [
+      {
+        "@id": "http://yang-netconf-mqtt#outDpEvMoisture"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcDescBrightness",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "Get brightness from sensor"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcConfTemperature",
+    "@type": [
+      "http://yang-netconf-mqtt#ConfigurationFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdConfTemperature"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescConfTemperature"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#cmdPump_1On",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput": [
+      {
+        "@id": "http://yang-netconf-mqtt#uuidInput"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpTemperature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"
+    ],
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+      {
+        "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "sensor/temperature/temperature_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#input_6_ConfCrud",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern": [
+      {
+        "@value": "CREATE"
+      },
+      {
+        "@value": "DELETE"
+      },
+      {
+        "@value": "UPDATE"
+      },
+      {
+        "@value": "READ"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#crudYangDesc"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#confOperatorYangDesc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://yang-netconf-mqtt#YangDescription"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "describes configuration operators"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcGetRainDetect",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescRainDetect"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#outDpMoisture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"
+    ],
+    "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+      {
+        "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/percent"
+      }
+    ],
+    "http://yang-netconf-mqtt#mqttTopic": [
+      {
+        "@value": "sensor/moisture/moisture_1/VD01-6D57-8K8K-5F12-1A8U3B1S74CC"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcGetHumidity",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescHumidity"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#opDescState",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern": [
+      {
+        "@value": "successful"
+      },
+      {
+        "@value": "error"
+      },
+      {
+        "@value": "nothing to do"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#intervallYangDesc",
+    "@type": [
+      "http://yang-netconf-mqtt#YangDescription",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue": [
+      {
+        "@value": "interval for event configuration"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#AutomationFunctionality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Functionality"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#funcPump_1On",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand": [
+      {
+        "@id": "http://yang-netconf-mqtt#cmdPump_1On"
+      }
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#funcDescPump_1On"
+      }
+    ]
+  },
+  {
+    "@id": "http://yang-netconf-mqtt#inputAutoMoisture",
+    "@type": [
+      "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty": [
+      {
+        "@id": "http://yang-netconf-mqtt#autoMoistureYangDesc"
+      }
+    ]
+  }
+]

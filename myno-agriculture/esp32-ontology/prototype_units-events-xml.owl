@@ -1,0 +1,1407 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://yang-netconf-mqtt#"
+     xml:base="http://yang-netconf-mqtt"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:om-2="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+     xmlns:yang-netconf-mqtt="http://yang-netconf-mqtt#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base_ontology="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://yang-netconf-mqtt">
+        <owl:imports rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+        <owl:imports rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0"/>
+        <owl:imports rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_maxInclusive"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_minInclusive"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataType"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubStructure -->
+
+    <owl:AnnotationProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubStructure"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/symbol -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/symbol"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput">
+        <rdfs:range rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutput"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern -->
+
+    <owl:DatatypeProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue"/>
+    
+
+
+    <!-- http://yang-netconf-mqtt#mqttMethod -->
+
+    <owl:DatatypeProperty rdf:about="http://yang-netconf-mqtt#mqttMethod"/>
+    
+
+
+    <!-- http://yang-netconf-mqtt#mqttTopic -->
+
+    <owl:DatatypeProperty rdf:about="http://yang-netconf-mqtt#mqttTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable -->
+
+    <owl:Class rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable"/>
+    
+
+
+    <!-- http://yang-netconf-mqtt#AutomationFunctionality -->
+
+    <owl:Class rdf:about="http://yang-netconf-mqtt#AutomationFunctionality">
+        <rdfs:subClassOf rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://yang-netconf-mqtt#ConfigurationFunctionality -->
+
+    <owl:Class rdf:about="http://yang-netconf-mqtt#ConfigurationFunctionality">
+        <rdfs:subClassOf rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://yang-netconf-mqtt#EventFunctionality -->
+
+    <owl:Class rdf:about="http://yang-netconf-mqtt#EventFunctionality">
+        <rdfs:subClassOf rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://yang-netconf-mqtt#YangDescription -->
+
+    <owl:Class rdf:about="http://yang-netconf-mqtt#YangDescription">
+        <rdfs:subClassOf rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1Off">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1On -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1On">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescHumidity">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get humidity from sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescMoisture">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get moisture from sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPressure">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get pressure from sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPump_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPump_1Off">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turn pump 1 off</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPump_1On -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPump_1On">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turn pump 1 on</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescRainDetect -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescRainDetect">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get rain detection signal from sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescTemperature">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get Temperature from sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetHumidity">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescHumidity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescMoisture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetPressure">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPressure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetRainDetect -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetRainDetect">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescRainDetect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1Off">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1Off"/>
+        <base_ontology:hasThingProperty rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPump_1Off"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1On -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1On">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1On"/>
+        <base_ontology:hasThingProperty rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcDescPump_1On"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#opMqttPump_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#opMqttPump_1Off">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1Off"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OFF</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actuator/pump/pump_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#opMqttPump_1On -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#opMqttPump_1On">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#cmdPump_1On"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ON</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actuator/pump/pump_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpHumidity">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensor/humidity/humidity_1/%s</mqttTopic>
+        <om-2:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/percent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensor/moisture/moisture_1/%s</mqttTopic>
+        <om-2:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/percent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpPressure">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensor/pressure/pressure_1/%s</mqttTopic>
+        <om-2:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpRainDetect -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpRainDetect">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensor/rain/rain_1/%s</mqttTopic>
+        <om-2:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/percent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensor/temperature/temperature_1/%s</mqttTopic>
+        <om-2:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servHumidity">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpHumidity"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetHumidity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpMoisture"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetMoisture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servPressure">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpPressure"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetPressure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servRainDetect -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servRainDetect">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpRainDetect"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetRainDetect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#outDpTemperature"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#autoMoistureYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#autoMoistureYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automation for moisture</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#cmdAutoMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#cmdAutoMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#inputAutoMoisture"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#cmdConfMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#cmdConfMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_1_ConfEvName"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_2_ConfOperator"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_3_ConfMoisture"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_4_ConfInterval"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_5_ConfDuration"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_6_ConfCrud"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#cmdConfTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#cmdConfTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_1_ConfEvName"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_2_ConfOperator"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_3_ConfTemperature"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_4_ConfInterval"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_5_ConfDuration"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_6_ConfCrud"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#cmdLed_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#cmdLed_1Off">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#cmdLed_1On -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#cmdLed_1On">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#cmdLed_1Rgb -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#cmdLed_1Rgb">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#rgbinput"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#confOperatorYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#confOperatorYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes configuration operators</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#crudYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#crudYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">select CRUD operations for events</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#deviceCategory -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#deviceCategory">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%sBoardName</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#deviceDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#deviceDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MQTT-Device identified by UUID</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#deviceUuid -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#deviceUuid">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%s</base_ontology:hasValue>
+        <base_ontology:hasDataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#durYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#durYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duration for event configuration</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcAutoMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcAutoMoisture">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#AutomationFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://yang-netconf-mqtt#cmdAutoMoisture"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescAutoMoisture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcConfMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcConfMoisture">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#ConfigurationFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://yang-netconf-mqtt#cmdConfMoisture"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescConfMoisture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcConfTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcConfTemperature">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#ConfigurationFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://yang-netconf-mqtt#cmdConfTemperature"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescConfTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescAutoMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescAutoMoisture">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automation rule for moisture sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescBrightness -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescBrightness">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get brightness from sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescConfMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescConfMoisture">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">configure moisture sensor for events</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescConfTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescConfTemperature">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">configure event for temperature sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescEvMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescEvMoisture">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event function for moisture sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescEvTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescEvTemperature">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event function for temperature sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescLed_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescLed_1Off">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turn led 1 off</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescLed_1On -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescLed_1On">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turn led 1 on</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcDescLed_1Rgb -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcDescLed_1Rgb">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">set RGB values for led 1</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcEvMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcEvMoisture">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#EventFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescEvMoisture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcEvTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcEvTemperature">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#EventFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescEvTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcGetBrightness -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcGetBrightness">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescBrightness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcLed_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcLed_1Off">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://yang-netconf-mqtt#cmdLed_1Off"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescLed_1Off"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcLed_1On -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcLed_1On">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://yang-netconf-mqtt#cmdLed_1On"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescLed_1On"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#funcLed_1Rgb -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#funcLed_1Rgb">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality"/>
+        <base_ontology:hasCommand rdf:resource="http://yang-netconf-mqtt#cmdLed_1Rgb"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#funcDescLed_1Rgb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#inputAutoMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#inputAutoMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#autoMoistureYangDesc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#inputBlue -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#inputBlue">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable"/>
+        <base_ontology:hasDataRestriction_maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">255</base_ontology:hasDataRestriction_maxInclusive>
+        <base_ontology:hasDataRestriction_minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</base_ontology:hasDataRestriction_minInclusive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#inputGreen -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#inputGreen">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable"/>
+        <base_ontology:hasDataRestriction_maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">255</base_ontology:hasDataRestriction_maxInclusive>
+        <base_ontology:hasDataRestriction_minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</base_ontology:hasDataRestriction_minInclusive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#inputRed -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#inputRed">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Variable"/>
+        <base_ontology:hasDataRestriction_maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">255</base_ontology:hasDataRestriction_maxInclusive>
+        <base_ontology:hasDataRestriction_minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</base_ontology:hasDataRestriction_minInclusive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#input_1_ConfEvName -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#input_1_ConfEvName">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#propConfEvName"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#temperatureEvYangDesc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#input_2_ConfOperator -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#input_2_ConfOperator">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#confOperatorYangDesc"/>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;=</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">==</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;=</base_ontology:hasDataRestriction_pattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#input_3_ConfMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#input_3_ConfMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#propConfMoisture"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#moistureYangDesc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#input_3_ConfTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#input_3_ConfTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#propConfTemperature"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#temperatureYangDesc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#input_4_ConfInterval -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#input_4_ConfInterval">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#propConfInterval"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#intervallYangDesc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#input_5_ConfDuration -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#input_5_ConfDuration">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Duration"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#propConfDuration"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#durYangDesc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#input_6_ConfCrud -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#input_6_ConfCrud">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#crudYangDesc"/>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CREATE</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DELETE</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">READ</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UPDATE</base_ontology:hasDataRestriction_pattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#intervallYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#intervallYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interval for event configuration</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#moistureEvYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#moistureEvYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event name caused by configuration</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#moistureYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#moistureYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">threshold values for moisture sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#myDevice -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#myDevice">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device"/>
+        <base_ontology:hasService rdf:resource="http://yang-netconf-mqtt#servNetconf"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#deviceCategory"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#deviceDesc"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#deviceUuid"/>
+        <base_ontology:hasFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetHumidity"/>
+        <base_ontology:hasFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetMoisture"/>
+        <base_ontology:hasFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetPressure"/>
+        <base_ontology:hasFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetRainDetect"/>
+        <base_ontology:hasFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetTemperature"/>
+        <base_ontology:hasFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1Off"/>
+        <base_ontology:hasFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1On"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcAutoMoisture"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcConfMoisture"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcConfTemperature"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcEvMoisture"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcEvTemperature"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcGetBrightness"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcLed_1Off"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcLed_1On"/>
+        <base_ontology:hasFunctionality rdf:resource="http://yang-netconf-mqtt#funcLed_1Rgb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opDescState -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opDescState">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">error</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nothing to do</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">successful</base_ontology:hasDataRestriction_pattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opMqttAutoMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opMqttAutoMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://yang-netconf-mqtt#cmdAutoMoisture"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#inputAutoMoisture"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AUTOMATION</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automation/sensor/moisture/moisture_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opMqttConfMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opMqttConfMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://yang-netconf-mqtt#cmdConfMoisture"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_1_ConfEvName"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_2_ConfOperator"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_3_ConfMoisture"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_4_ConfInterval"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_5_ConfDuration"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_6_ConfCrud"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFIGEVENT</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">config/sensor/moisture/moisture_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opMqttConfTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opMqttConfTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://yang-netconf-mqtt#cmdConfTemperature"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_1_ConfEvName"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_2_ConfOperator"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_3_ConfTemperature"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_4_ConfInterval"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_5_ConfDuration"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#input_6_ConfCrud"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFIGEVENT</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">config/sensor/temperature/temperature_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opMqttLed_1Off -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opMqttLed_1Off">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://yang-netconf-mqtt#cmdLed_1Off"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OFF</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actuator/led/led_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opMqttLed_1On -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opMqttLed_1On">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://yang-netconf-mqtt#cmdLed_1On"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ON</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actuator/led/led_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opMqttLed_1Rgb -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opMqttLed_1Rgb">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation"/>
+        <base_ontology:exposesCommand rdf:resource="http://yang-netconf-mqtt#cmdLed_1Rgb"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#rgbinput"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#uuidInput"/>
+        <base_ontology:hasOperationState rdf:resource="http://yang-netconf-mqtt#opState"/>
+        <mqttMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RGB</mqttMethod>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actuator/led/led_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#opState -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#opState">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#opDescState"/>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOOP</base_ontology:hasDataRestriction_pattern>
+        <base_ontology:hasDataRestriction_pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OK</base_ontology:hasDataRestriction_pattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#outDpBrightness -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#outDpBrightness">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensor/brightness/brightness_1/%s</mqttTopic>
+        <om-2:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/lux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#outDpEvMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#outDpEvMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event/sensor/moisture/moisture_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#outDpEvTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#outDpEvTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint"/>
+        <mqttTopic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event/sensor/temperature/temperature_1/%s</mqttTopic>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#propConfDuration -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#propConfDuration">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+        <base_ontology:hasDataType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#propConfEvName -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#propConfEvName">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+        <base_ontology:hasDataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#propConfInterval -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#propConfInterval">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+        <base_ontology:hasDataType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#propConfMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#propConfMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+        <base_ontology:hasDataRestriction_maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100</base_ontology:hasDataRestriction_maxInclusive>
+        <base_ontology:hasDataRestriction_minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</base_ontology:hasDataRestriction_minInclusive>
+        <base_ontology:hasDataType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#propConfTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#propConfTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"/>
+        <base_ontology:hasDataRestriction_maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</base_ontology:hasDataRestriction_maxInclusive>
+        <base_ontology:hasDataRestriction_minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-20</base_ontology:hasDataRestriction_minInclusive>
+        <base_ontology:hasDataType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#rgbYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#rgbYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RGB parameter for led_1</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#rgbinput -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#rgbinput">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#rgbYangDesc"/>
+        <base_ontology:hasSubStructure rdf:resource="http://yang-netconf-mqtt#inputBlue"/>
+        <base_ontology:hasSubStructure rdf:resource="http://yang-netconf-mqtt#inputGreen"/>
+        <base_ontology:hasSubStructure rdf:resource="http://yang-netconf-mqtt#inputRed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#servBrightness -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#servBrightness">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://yang-netconf-mqtt#outDpBrightness"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcGetBrightness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#servEvMoisture -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#servEvMoisture">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://yang-netconf-mqtt#outDpEvMoisture"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcEvMoisture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#servEvTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#servEvTemperature">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOutputDataPoint rdf:resource="http://yang-netconf-mqtt#outDpEvTemperature"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcEvTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#servNetconf -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#servNetconf">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+        <base_ontology:hasOperation rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#opMqttPump_1Off"/>
+        <base_ontology:hasOperation rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#opMqttPump_1On"/>
+        <base_ontology:hasOperation rdf:resource="http://yang-netconf-mqtt#opMqttAutoMoisture"/>
+        <base_ontology:hasOperation rdf:resource="http://yang-netconf-mqtt#opMqttConfMoisture"/>
+        <base_ontology:hasOperation rdf:resource="http://yang-netconf-mqtt#opMqttConfTemperature"/>
+        <base_ontology:hasOperation rdf:resource="http://yang-netconf-mqtt#opMqttLed_1Off"/>
+        <base_ontology:hasOperation rdf:resource="http://yang-netconf-mqtt#opMqttLed_1On"/>
+        <base_ontology:hasOperation rdf:resource="http://yang-netconf-mqtt#opMqttLed_1Rgb"/>
+        <base_ontology:hasSubService rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servHumidity"/>
+        <base_ontology:hasSubService rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servMoisture"/>
+        <base_ontology:hasSubService rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servPressure"/>
+        <base_ontology:hasSubService rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servRainDetect"/>
+        <base_ontology:hasSubService rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#servTemperature"/>
+        <base_ontology:hasSubService rdf:resource="http://yang-netconf-mqtt#servBrightness"/>
+        <base_ontology:hasSubService rdf:resource="http://yang-netconf-mqtt#servEvMoisture"/>
+        <base_ontology:hasSubService rdf:resource="http://yang-netconf-mqtt#servEvTemperature"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetHumidity"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetMoisture"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetPressure"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetRainDetect"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcGetTemperature"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1Off"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#funcPump_1On"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcAutoMoisture"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcConfMoisture"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcConfTemperature"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcEvMoisture"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcEvTemperature"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcGetBrightness"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcLed_1Off"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcLed_1On"/>
+        <base_ontology:exposesFunctionality rdf:resource="http://yang-netconf-mqtt#funcLed_1Rgb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#temperatureEvYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#temperatureEvYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event name caused by configuration</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#temperatureYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#temperatureYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">threshold values for temperature sensor</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#uuidInput -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#uuidInput">
+        <rdf:type rdf:resource="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput"/>
+        <base_ontology:hasInput rdf:resource="http://yang-netconf-mqtt#deviceUuid"/>
+        <base_ontology:hasThingProperty rdf:resource="http://yang-netconf-mqtt#uuidYangDesc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://yang-netconf-mqtt#uuidYangDesc -->
+
+    <owl:NamedIndividual rdf:about="http://yang-netconf-mqtt#uuidYangDesc">
+        <rdf:type rdf:resource="http://yang-netconf-mqtt#YangDescription"/>
+        <base_ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Target UUID for request</base_ontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+        <om-2:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">°C</om-2:symbol>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal">
+        <om-2:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hPa</om-2:symbol>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">
+        <om-2:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lx</om-2:symbol>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/percent">
+        <om-2:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%%</om-2:symbol>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

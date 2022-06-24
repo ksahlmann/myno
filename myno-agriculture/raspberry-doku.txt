@@ -1,0 +1,69 @@
+Setup Raspberry Pi 3B for MYNO
+
+- NOOBS
+- use Raspberry Buster version for Pi 4
+- install mosquitto for MQTT broker
+-- sudo apt-get install mosquitto
+-- sudo apt-get install mosquitto-clients
+- install Python 3.7 or higher
+
+- install svn
+-- sudo apt-get install subversion
+- checkout the sources from svn for the bridge and the webclient
+
+- install missing modules for bridge: 
+-- apt-get install lxml
+-- apt-get install lxslt
+-- pip3 install netconf (2.1)
+-- pip3 install ncclient (0.6.7)
+-- pip3 install paho-mqtt (1.5.0 for MQTT 3.1.1)
+-- pip3 install rdflib (rdflib 5.0)
+-- pip3 install pyang (pyang 2.4)
+-- pip3 install rdflib-jsonld (0.5)
+-- add fix from Sahlmann to rdflib-json in file util.py 
+
+--upgrade python modules:
+-- pip3 install pyang --upgrade 
+
+- show information about installed modules, for example:
+-- pip3 show netconf 
+
+- start the bridge 
+-- python3.7 netconf_server.py 
+
+- install missing modules for webclient:
+-- pip3 install flask_mqtt
+- start webclient
+-- python3.7 __init.py__
+- call in webbrowser
+-- http://127.0.0.1:5000
+
+
+- monitor mosquitto 
+-- mosquitto_sub -t yang/# 
+
+Passwort for Raspberry: whatever
+
+- Monitor MQTT Broker messages
+-- mosquitto_sub -t '#' -v 
+
+-Make a screenshot with countdown of 5
+-- scrot -cd 5 screenshot.png
+
+
+Connectivity:
+- WLAN "wlanname"
+-- Passwort: whatever
+- 6LOWPAN Border Router:
+-- cd /Dokumente/contiki-ng/tools/serial-io/
+-- sudo ./tunslip6 -s /dev/ttyUSB1 fd00::1/64 
+
+- Check Router in Browser
+--[fd00::212:4b00:413:36c1]
+
+
+
+
+
+
+

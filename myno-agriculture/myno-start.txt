@@ -1,0 +1,42 @@
+Raspberry Pi - MYNO Framework 
+
+SVN UPDATE
+cd Dokumente
+svn update --username *username* bridge-svn/
+usw.
+
+
+- start the bridge from 
+cd /Dokumente/bridge-svn/bootstrap
+python3.7 netconf_server.py
+
+- start VD from 
+cd /Dokumente/bridge-svn/vd-agriculture
+python3.7 vd-mqttclient.py
+
+- start webclient from 
+cd /Dokumente/netconf-client
+python3.7 __init__.py
+
+
+Browser
+http://127.0.0.1:5000/
+
+
+Performance TSHARK
+cd Dokumente
+touch traffic.pcap
+chmod o=rw traffic.pcap
+sudo tshark -i 1 -a duration:3600 -w traffic.pcap
+
+
+VMSTAT
+vmstat -1 1 > /home/pi/Dokumente/vmstat-time.txt
+
+
+MQTT 
+
+pi@raspberrypi:~/Dokumente $ mosquitto_sub -t "#" -v | xargs -d$'\n' -L1 bash -c 'date "+%Y-%m-%d %T.%3N $0"' > /home/pi/Dokumente/mqtt-time.txt
+
+
+

@@ -1,0 +1,1608 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "base": "http://yang-netconf-mqtt#",
+    "onem2m": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#",
+    "om-2": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@graph": [
+    {
+      "@id": "onem2m:Command",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:ControllingFunctionality",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:Device",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:MeasuringFunctionality",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:Operation",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OperationInput",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OperationOutput",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OperationState",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OutputDataPoint",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:Service",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:ThingProperty",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:Variable",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:cmdPump_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      }
+    },
+    {
+      "@id": "onem2m:cmdPump_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      }
+    },
+    {
+      "@id": "onem2m:exposesCommand",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:exposesFunctionality",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:funcDescHumidity",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get humidity from sensor"
+    },
+    {
+      "@id": "onem2m:funcDescMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get moisture from sensor"
+    },
+    {
+      "@id": "onem2m:funcDescPressure",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get pressure from sensor"
+    },
+    {
+      "@id": "onem2m:funcDescPump_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "turn pump 1 off"
+    },
+    {
+      "@id": "onem2m:funcDescPump_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "turn pump 1 on"
+    },
+    {
+      "@id": "onem2m:funcDescRainDetect",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get rain detection signal from sensor"
+    },
+    {
+      "@id": "onem2m:funcDescTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get Temperature from sensor"
+    },
+    {
+      "@id": "onem2m:funcGetHumidity",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "onem2m:funcDescHumidity"
+      }
+    },
+    {
+      "@id": "onem2m:funcGetMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "onem2m:funcDescMoisture"
+      }
+    },
+    {
+      "@id": "onem2m:funcGetPressure",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "onem2m:funcDescPressure"
+      }
+    },
+    {
+      "@id": "onem2m:funcGetRainDetect",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "onem2m:funcDescRainDetect"
+      }
+    },
+    {
+      "@id": "onem2m:funcGetTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "onem2m:funcDescTemperature"
+      }
+    },
+    {
+      "@id": "onem2m:funcPump_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "onem2m:cmdPump_1Off"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "onem2m:funcDescPump_1Off"
+      }
+    },
+    {
+      "@id": "onem2m:funcPump_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "onem2m:cmdPump_1On"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "onem2m:funcDescPump_1On"
+      }
+    },
+    {
+      "@id": "onem2m:hasCommand",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasDataRestriction_maxInclusive",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasDataRestriction_minInclusive",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasDataRestriction_pattern",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "onem2m:hasDataType",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasFunctionality",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasInput",
+      "@type": "owl:ObjectProperty",
+      "rdfs:range": {
+        "@id": "onem2m:ThingProperty"
+      }
+    },
+    {
+      "@id": "onem2m:hasOperation",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasOperationState",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasOutput",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasOutputDataPoint",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasService",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasSubService",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasSubStructure",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasThingProperty",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasValue",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "onem2m:opMqttPump_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "onem2m:cmdPump_1Off"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "OFF",
+      "base:mqttTopic": "actuator/pump/pump_1/%s"
+    },
+    {
+      "@id": "onem2m:opMqttPump_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "onem2m:cmdPump_1On"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "ON",
+      "base:mqttTopic": "actuator/pump/pump_1/%s"
+    },
+    {
+      "@id": "onem2m:outDpHumidity",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "om-2:hasUnit": {
+        "@id": "om-2:percent"
+      },
+      "base:mqttTopic": "sensor/humidity/humidity_1/%s"
+    },
+    {
+      "@id": "onem2m:outDpMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "om-2:hasUnit": {
+        "@id": "om-2:percent"
+      },
+      "base:mqttTopic": "sensor/moisture/moisture_1/%s"
+    },
+    {
+      "@id": "onem2m:outDpPressure",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "om-2:hasUnit": {
+        "@id": "om-2:hectopascal"
+      },
+      "base:mqttTopic": "sensor/pressure/pressure_1/%s"
+    },
+    {
+      "@id": "onem2m:outDpRainDetect",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "om-2:hasUnit": {
+        "@id": "om-2:percent"
+      },
+      "base:mqttTopic": "sensor/rain/rain_1/%s"
+    },
+    {
+      "@id": "onem2m:outDpTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "om-2:hasUnit": {
+        "@id": "om-2:degreeCelsius"
+      },
+      "base:mqttTopic": "sensor/temperature/temperature_1/%s"
+    },
+    {
+      "@id": "onem2m:servHumidity",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "onem2m:funcGetHumidity"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "onem2m:outDpHumidity"
+      }
+    },
+    {
+      "@id": "onem2m:servMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "onem2m:funcGetMoisture"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "onem2m:outDpMoisture"
+      }
+    },
+    {
+      "@id": "onem2m:servPressure",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "onem2m:funcGetPressure"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "onem2m:outDpPressure"
+      }
+    },
+    {
+      "@id": "onem2m:servRainDetect",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "onem2m:funcGetRainDetect"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "onem2m:outDpRainDetect"
+      }
+    },
+    {
+      "@id": "onem2m:servTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "onem2m:funcGetTemperature"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "onem2m:outDpTemperature"
+      }
+    },
+    {
+      "@id": "om-2:degreeCelsius",
+      "om-2:symbol": "°C"
+    },
+    {
+      "@id": "om-2:hasUnit",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "om-2:hectopascal",
+      "om-2:symbol": "hPa"
+    },
+    {
+      "@id": "om-2:lux",
+      "om-2:symbol": "lx"
+    },
+    {
+      "@id": "om-2:percent",
+      "om-2:symbol": "%%"
+    },
+    {
+      "@id": "om-2:symbol",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://yang-netconf-mqtt",
+      "@type": "owl:Ontology",
+      "owl:imports": [
+        {
+          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "@id": "time:2016"
+        },
+        {
+          "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0"
+        },
+        {
+          "@id": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+        }
+      ]
+    },
+    {
+      "@id": "base:AutomationFunctionality",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "onem2m:Functionality"
+      }
+    },
+    {
+      "@id": "base:ConfigurationFunctionality",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "onem2m:Functionality"
+      }
+    },
+    {
+      "@id": "base:EventFunctionality",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "onem2m:Functionality"
+      }
+    },
+    {
+      "@id": "base:YangDescription",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "onem2m:ThingProperty"
+      }
+    },
+    {
+      "@id": "base:autoMoistureYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "automation for moisture"
+    },
+    {
+      "@id": "base:cmdAutoMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": [
+        {
+          "@id": "base:inputAutoMoisture"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ]
+    },
+    {
+      "@id": "base:cmdConfMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": [
+        {
+          "@id": "base:input_1_ConfEvName"
+        },
+        {
+          "@id": "base:input_2_ConfOperator"
+        },
+        {
+          "@id": "base:input_3_ConfMoisture"
+        },
+        {
+          "@id": "base:input_4_ConfInterval"
+        },
+        {
+          "@id": "base:input_5_ConfDuration"
+        },
+        {
+          "@id": "base:input_6_ConfCrud"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ]
+    },
+    {
+      "@id": "base:cmdConfTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": [
+        {
+          "@id": "base:input_1_ConfEvName"
+        },
+        {
+          "@id": "base:input_2_ConfOperator"
+        },
+        {
+          "@id": "base:input_3_ConfTemperature"
+        },
+        {
+          "@id": "base:input_4_ConfInterval"
+        },
+        {
+          "@id": "base:input_5_ConfDuration"
+        },
+        {
+          "@id": "base:input_6_ConfCrud"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ]
+    },
+    {
+      "@id": "base:cmdLed_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      }
+    },
+    {
+      "@id": "base:cmdLed_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      }
+    },
+    {
+      "@id": "base:cmdLed_1Rgb",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": [
+        {
+          "@id": "base:rgbinput"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ]
+    },
+    {
+      "@id": "base:confOperatorYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "describes configuration operators"
+    },
+    {
+      "@id": "base:crudYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "select CRUD operations for events"
+    },
+    {
+      "@id": "base:deviceCategory",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasValue": "%sBoardName"
+    },
+    {
+      "@id": "base:deviceDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "MQTT-Device identified by UUID"
+    },
+    {
+      "@id": "base:deviceUuid",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      },
+      "onem2m:hasValue": "%s"
+    },
+    {
+      "@id": "base:durYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "duration for event configuration"
+    },
+    {
+      "@id": "base:funcAutoMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:AutomationFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdAutoMoisture"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescAutoMoisture"
+      }
+    },
+    {
+      "@id": "base:funcConfMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:ConfigurationFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdConfMoisture"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescConfMoisture"
+      }
+    },
+    {
+      "@id": "base:funcConfTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:ConfigurationFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdConfTemperature"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescConfTemperature"
+      }
+    },
+    {
+      "@id": "base:funcDescAutoMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "automation rule for moisture sensor"
+    },
+    {
+      "@id": "base:funcDescBrightness",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get brightness from sensor"
+    },
+    {
+      "@id": "base:funcDescConfMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "configure moisture sensor for events"
+    },
+    {
+      "@id": "base:funcDescConfTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "configure event for temperature sensor"
+    },
+    {
+      "@id": "base:funcDescEvMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "event function for moisture sensor"
+    },
+    {
+      "@id": "base:funcDescEvTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "event function for temperature sensor"
+    },
+    {
+      "@id": "base:funcDescLed_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "turn led 1 off"
+    },
+    {
+      "@id": "base:funcDescLed_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "turn led 1 on"
+    },
+    {
+      "@id": "base:funcDescLed_1Rgb",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "set RGB values for led 1"
+    },
+    {
+      "@id": "base:funcEvMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:EventFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescEvMoisture"
+      }
+    },
+    {
+      "@id": "base:funcEvTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:EventFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescEvTemperature"
+      }
+    },
+    {
+      "@id": "base:funcGetBrightness",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescBrightness"
+      }
+    },
+    {
+      "@id": "base:funcLed_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdLed_1Off"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescLed_1Off"
+      }
+    },
+    {
+      "@id": "base:funcLed_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdLed_1On"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescLed_1On"
+      }
+    },
+    {
+      "@id": "base:funcLed_1Rgb",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdLed_1Rgb"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescLed_1Rgb"
+      }
+    },
+    {
+      "@id": "base:inputAutoMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:autoMoistureYangDesc"
+      }
+    },
+    {
+      "@id": "base:inputBlue",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Variable"
+      ],
+      "onem2m:hasDataRestriction_maxInclusive": {
+        "@type": "xsd:int",
+        "@value": "255"
+      },
+      "onem2m:hasDataRestriction_minInclusive": {
+        "@type": "xsd:int",
+        "@value": "0"
+      }
+    },
+    {
+      "@id": "base:inputGreen",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Variable"
+      ],
+      "onem2m:hasDataRestriction_maxInclusive": {
+        "@type": "xsd:int",
+        "@value": "255"
+      },
+      "onem2m:hasDataRestriction_minInclusive": {
+        "@type": "xsd:int",
+        "@value": "0"
+      }
+    },
+    {
+      "@id": "base:inputRed",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Variable"
+      ],
+      "onem2m:hasDataRestriction_maxInclusive": {
+        "@type": "xsd:int",
+        "@value": "255"
+      },
+      "onem2m:hasDataRestriction_minInclusive": {
+        "@type": "xsd:int",
+        "@value": "0"
+      }
+    },
+    {
+      "@id": "base:input_1_ConfEvName",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propConfEvName"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:temperatureEvYangDesc"
+      }
+    },
+    {
+      "@id": "base:input_2_ConfOperator",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "<",
+        "<=",
+        "==",
+        ">",
+        ">="
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:confOperatorYangDesc"
+      }
+    },
+    {
+      "@id": "base:input_3_ConfMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propConfMoisture"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:moistureYangDesc"
+      }
+    },
+    {
+      "@id": "base:input_3_ConfTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propConfTemperature"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:temperatureYangDesc"
+      }
+    },
+    {
+      "@id": "base:input_4_ConfInterval",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput",
+        "time:Interval"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propConfInterval"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:intervallYangDesc"
+      }
+    },
+    {
+      "@id": "base:input_5_ConfDuration",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput",
+        "time:Duration"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propConfDuration"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:durYangDesc"
+      }
+    },
+    {
+      "@id": "base:input_6_ConfCrud",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "CREATE",
+        "DELETE",
+        "READ",
+        "UPDATE"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:crudYangDesc"
+      }
+    },
+    {
+      "@id": "base:intervallYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "interval for event configuration"
+    },
+    {
+      "@id": "base:moistureEvYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "event name caused by configuration"
+    },
+    {
+      "@id": "base:moistureYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "threshold values for moisture sensor"
+    },
+    {
+      "@id": "base:mqttMethod",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "base:mqttTopic",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "base:myDevice",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Device"
+      ],
+      "onem2m:hasFunctionality": [
+        {
+          "@id": "onem2m:funcGetHumidity"
+        },
+        {
+          "@id": "onem2m:funcGetMoisture"
+        },
+        {
+          "@id": "onem2m:funcGetPressure"
+        },
+        {
+          "@id": "onem2m:funcGetRainDetect"
+        },
+        {
+          "@id": "onem2m:funcGetTemperature"
+        },
+        {
+          "@id": "onem2m:funcPump_1Off"
+        },
+        {
+          "@id": "onem2m:funcPump_1On"
+        },
+        {
+          "@id": "base:funcAutoMoisture"
+        },
+        {
+          "@id": "base:funcConfMoisture"
+        },
+        {
+          "@id": "base:funcConfTemperature"
+        },
+        {
+          "@id": "base:funcEvMoisture"
+        },
+        {
+          "@id": "base:funcEvTemperature"
+        },
+        {
+          "@id": "base:funcGetBrightness"
+        },
+        {
+          "@id": "base:funcLed_1Off"
+        },
+        {
+          "@id": "base:funcLed_1On"
+        },
+        {
+          "@id": "base:funcLed_1Rgb"
+        }
+      ],
+      "onem2m:hasService": {
+        "@id": "base:servNetconf"
+      },
+      "onem2m:hasThingProperty": [
+        {
+          "@id": "base:deviceCategory"
+        },
+        {
+          "@id": "base:deviceDesc"
+        },
+        {
+          "@id": "base:deviceUuid"
+        }
+      ]
+    },
+    {
+      "@id": "base:opDescState",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "error",
+        "nothing to do",
+        "successful"
+      ]
+    },
+    {
+      "@id": "base:opMqttAutoMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdAutoMoisture"
+      },
+      "onem2m:hasInput": [
+        {
+          "@id": "base:inputAutoMoisture"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ],
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "AUTOMATION",
+      "base:mqttTopic": "automation/sensor/moisture/moisture_1/%s"
+    },
+    {
+      "@id": "base:opMqttConfMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdConfMoisture"
+      },
+      "onem2m:hasInput": [
+        {
+          "@id": "base:input_1_ConfEvName"
+        },
+        {
+          "@id": "base:input_2_ConfOperator"
+        },
+        {
+          "@id": "base:input_3_ConfMoisture"
+        },
+        {
+          "@id": "base:input_4_ConfInterval"
+        },
+        {
+          "@id": "base:input_5_ConfDuration"
+        },
+        {
+          "@id": "base:input_6_ConfCrud"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ],
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "CONFIGEVENT",
+      "base:mqttTopic": "config/sensor/moisture/moisture_1/%s"
+    },
+    {
+      "@id": "base:opMqttConfTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdConfTemperature"
+      },
+      "onem2m:hasInput": [
+        {
+          "@id": "base:input_1_ConfEvName"
+        },
+        {
+          "@id": "base:input_2_ConfOperator"
+        },
+        {
+          "@id": "base:input_3_ConfTemperature"
+        },
+        {
+          "@id": "base:input_4_ConfInterval"
+        },
+        {
+          "@id": "base:input_5_ConfDuration"
+        },
+        {
+          "@id": "base:input_6_ConfCrud"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ],
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "CONFIGEVENT",
+      "base:mqttTopic": "config/sensor/temperature/temperature_1/%s"
+    },
+    {
+      "@id": "base:opMqttLed_1Off",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdLed_1Off"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "OFF",
+      "base:mqttTopic": "actuator/led/led_1/%s"
+    },
+    {
+      "@id": "base:opMqttLed_1On",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdLed_1On"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "ON",
+      "base:mqttTopic": "actuator/led/led_1/%s"
+    },
+    {
+      "@id": "base:opMqttLed_1Rgb",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdLed_1Rgb"
+      },
+      "onem2m:hasInput": [
+        {
+          "@id": "base:rgbinput"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ],
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "RGB",
+      "base:mqttTopic": "actuator/led/led_1/%s"
+    },
+    {
+      "@id": "base:opState",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationState"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "ERROR",
+        "NOOP",
+        "OK"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:opDescState"
+      }
+    },
+    {
+      "@id": "base:outDpBrightness",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "om-2:hasUnit": {
+        "@id": "om-2:lux"
+      },
+      "base:mqttTopic": "sensor/brightness/brightness_1/%s"
+    },
+    {
+      "@id": "base:outDpEvMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "base:mqttTopic": "event/sensor/moisture/moisture_1/%s"
+    },
+    {
+      "@id": "base:outDpEvTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "base:mqttTopic": "event/sensor/temperature/temperature_1/%s"
+    },
+    {
+      "@id": "base:propConfDuration",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:propConfEvName",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "base:propConfInterval",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:propConfMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataRestriction_maxInclusive": "100",
+      "onem2m:hasDataRestriction_minInclusive": "0",
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:propConfTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataRestriction_maxInclusive": {
+        "@type": "xsd:integer",
+        "@value": "100"
+      },
+      "onem2m:hasDataRestriction_minInclusive": {
+        "@type": "xsd:integer",
+        "@value": "-20"
+      },
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:rgbYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "RGB parameter for led_1"
+    },
+    {
+      "@id": "base:rgbinput",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasSubStructure": [
+        {
+          "@id": "base:inputBlue"
+        },
+        {
+          "@id": "base:inputGreen"
+        },
+        {
+          "@id": "base:inputRed"
+        }
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:rgbYangDesc"
+      }
+    },
+    {
+      "@id": "base:servBrightness",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcGetBrightness"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "base:outDpBrightness"
+      }
+    },
+    {
+      "@id": "base:servEvMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcEvMoisture"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "base:outDpEvMoisture"
+      }
+    },
+    {
+      "@id": "base:servEvTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcEvTemperature"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "base:outDpEvTemperature"
+      }
+    },
+    {
+      "@id": "base:servNetconf",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": [
+        {
+          "@id": "onem2m:funcGetHumidity"
+        },
+        {
+          "@id": "onem2m:funcGetMoisture"
+        },
+        {
+          "@id": "onem2m:funcGetPressure"
+        },
+        {
+          "@id": "onem2m:funcGetRainDetect"
+        },
+        {
+          "@id": "onem2m:funcGetTemperature"
+        },
+        {
+          "@id": "onem2m:funcPump_1Off"
+        },
+        {
+          "@id": "onem2m:funcPump_1On"
+        },
+        {
+          "@id": "base:funcAutoMoisture"
+        },
+        {
+          "@id": "base:funcConfMoisture"
+        },
+        {
+          "@id": "base:funcConfTemperature"
+        },
+        {
+          "@id": "base:funcEvMoisture"
+        },
+        {
+          "@id": "base:funcEvTemperature"
+        },
+        {
+          "@id": "base:funcGetBrightness"
+        },
+        {
+          "@id": "base:funcLed_1Off"
+        },
+        {
+          "@id": "base:funcLed_1On"
+        },
+        {
+          "@id": "base:funcLed_1Rgb"
+        }
+      ],
+      "onem2m:hasOperation": [
+        {
+          "@id": "onem2m:opMqttPump_1Off"
+        },
+        {
+          "@id": "onem2m:opMqttPump_1On"
+        },
+        {
+          "@id": "base:opMqttAutoMoisture"
+        },
+        {
+          "@id": "base:opMqttConfMoisture"
+        },
+        {
+          "@id": "base:opMqttConfTemperature"
+        },
+        {
+          "@id": "base:opMqttLed_1Off"
+        },
+        {
+          "@id": "base:opMqttLed_1On"
+        },
+        {
+          "@id": "base:opMqttLed_1Rgb"
+        }
+      ],
+      "onem2m:hasSubService": [
+        {
+          "@id": "onem2m:servHumidity"
+        },
+        {
+          "@id": "onem2m:servMoisture"
+        },
+        {
+          "@id": "onem2m:servPressure"
+        },
+        {
+          "@id": "onem2m:servRainDetect"
+        },
+        {
+          "@id": "onem2m:servTemperature"
+        },
+        {
+          "@id": "base:servBrightness"
+        },
+        {
+          "@id": "base:servEvMoisture"
+        },
+        {
+          "@id": "base:servEvTemperature"
+        }
+      ]
+    },
+    {
+      "@id": "base:temperatureEvYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "event name caused by configuration"
+    },
+    {
+      "@id": "base:temperatureYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "threshold values for temperature sensor"
+    },
+    {
+      "@id": "base:uuidInput",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:deviceUuid"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:uuidYangDesc"
+      }
+    },
+    {
+      "@id": "base:uuidYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Target UUID for request"
+    }
+  ]
+}
