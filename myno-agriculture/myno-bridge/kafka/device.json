@@ -1,0 +1,12 @@
+{
+  "device-uuid" : "DEVICE1-8A12-4F4F-8F69-6B8F3C2E78DD",
+  "location" : "building1/room2",
+  "sensors" : [
+    {"mqtt-topic" : "sensor/temperature/temp1/DEVICE1-8A12-4F4F-8F69-6B8F3C2E78DD",
+     "units" : "CelsiusScale"},
+    {"mqtt-topic" : "sensor/humidity/hum1/DEVICE1-8A12-4F4F-8F69-6B8F3C2E78DD",
+     "units" : "percent"},
+    {"mqtt-topic" : "sensor/illuminance/bright1/DEVICE1-8A12-4F4F-8F69-6B8F3C2E78DD",
+     "units" : "lux"}
+  ]
+}

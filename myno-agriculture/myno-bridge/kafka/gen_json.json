@@ -1,0 +1,18 @@
+{
+  "device-uuid": "SIMULATOR5-3A78-4F4F-8F69-6B8F3C2E78DD",
+  "location": "building4/room2.02",
+  "sensors": [
+    {
+      "mqtt-topic": "sensor/temperature/temperature_1/SIMULATOR5-3A78-4F4F-8F69-6B8F3C2E78DD",
+      "units": "degreeCelsius"
+    },
+    {
+      "mqtt-topic": "sensor/brightness/brightness_1/SIMULATOR5-3A78-4F4F-8F69-6B8F3C2E78DD",
+      "units": "lux"
+    },
+    {
+      "mqtt-topic": "sensor/humidity/humidity_1/SIMULATOR5-3A78-4F4F-8F69-6B8F3C2E78DD",
+      "units": "percent"
+    }
+  ]
+}
