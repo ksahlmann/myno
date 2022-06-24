@@ -1,0 +1,397 @@
+[ {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+  } ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://yang-netconf-mqtt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#YangDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#cmdLed_1Color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
+    "@id" : "http://yang-netconf-mqtt#colorInput"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#uuidInput"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#cmdLed_1Off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
+    "@id" : "http://yang-netconf-mqtt#uuidInput"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#cmdLed_1On",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Command" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
+    "@id" : "http://yang-netconf-mqtt#uuidInput"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#colorInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
+    "@value" : "all"
+  }, {
+    "@value" : "green"
+  }, {
+    "@value" : "red"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#colorYangDesc"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#colorYangDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "color paramter for led_1"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#deviceCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "Board_2"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#deviceDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "MQTT-Device identified by UUID"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#deviceUuid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ThingProperty" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "%s"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcDescBrightness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "Get brightness from sensor"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcDescLed_1Color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "Set Color of led_1"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcDescLed_1Off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "Turn led_1 off, i.e. all sub-leds"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcDescLed_1On",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "Turn led_1 on, i.e. all sub-leds"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcDescMotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "Get motion detection from sensor"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcDetectMotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDescMotion"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcGetBrightness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#MeasuringFunctionality" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDescBrightness"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcLed_1Color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
+    "@id" : "http://yang-netconf-mqtt#cmdLed_1Color"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDescLed_1Color"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcLed_1Off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
+    "@id" : "http://yang-netconf-mqtt#cmdLed_1Off"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDescLed_1Off"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#funcLed_1On",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#ControllingFunctionality" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasCommand" : [ {
+    "@id" : "http://yang-netconf-mqtt#cmdLed_1On"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDescLed_1On"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#mqttMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#mqttTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#myDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Device" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasFunctionality" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDetectMotion"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcGetBrightness"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcLed_1Color"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcLed_1Off"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcLed_1On"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasService" : [ {
+    "@id" : "http://yang-netconf-mqtt#servNetconf"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#deviceCategory"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#deviceDesc"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#deviceUuid"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#opDescState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
+    "@value" : "error"
+  }, {
+    "@value" : "nothing to do"
+  }, {
+    "@value" : "successful"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#opMqttLed_1Color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
+    "@id" : "http://yang-netconf-mqtt#cmdLed_1Color"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
+    "@id" : "http://yang-netconf-mqtt#colorInput"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#uuidInput"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
+    "@id" : "http://yang-netconf-mqtt#opState"
+  } ],
+  "http://yang-netconf-mqtt#mqttMethod" : [ {
+    "@value" : "color"
+  } ],
+  "http://yang-netconf-mqtt#mqttTopic" : [ {
+    "@value" : "actuator/led/led_1"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#opMqttLed_1Off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
+    "@id" : "http://yang-netconf-mqtt#cmdLed_1Off"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
+    "@id" : "http://yang-netconf-mqtt#uuidInput"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
+    "@id" : "http://yang-netconf-mqtt#opState"
+  } ],
+  "http://yang-netconf-mqtt#mqttMethod" : [ {
+    "@value" : "OFF"
+  } ],
+  "http://yang-netconf-mqtt#mqttTopic" : [ {
+    "@value" : "actuator/led/led_1"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#opMqttLed_1On",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Operation" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesCommand" : [ {
+    "@id" : "http://yang-netconf-mqtt#cmdLed_1On"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
+    "@id" : "http://yang-netconf-mqtt#uuidInput"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperationState" : [ {
+    "@id" : "http://yang-netconf-mqtt#opState"
+  } ],
+  "http://yang-netconf-mqtt#mqttMethod" : [ {
+    "@value" : "ON"
+  } ],
+  "http://yang-netconf-mqtt#mqttTopic" : [ {
+    "@value" : "actuator/led/led_1"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#opState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationState" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasDataRestriction_pattern" : [ {
+    "@value" : "ERROR"
+  }, {
+    "@value" : "NOOP"
+  }, {
+    "@value" : "OK"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#opDescState"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#outDpBrightness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint" ],
+  "http://yang-netconf-mqtt#mqttTopic" : [ {
+    "@value" : "sensor/brightness/brightness_1/%s"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#outDpMotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OutputDataPoint" ],
+  "http://yang-netconf-mqtt#mqttTopic" : [ {
+    "@value" : "sensor/motion/motion_1/%s"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#servBrightness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcGetBrightness"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint" : [ {
+    "@id" : "http://yang-netconf-mqtt#outDpBrightness"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#servMotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDetectMotion"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOutputDataPoint" : [ {
+    "@id" : "http://yang-netconf-mqtt#outDpMotion"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#servNetconf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#exposesFunctionality" : [ {
+    "@id" : "http://yang-netconf-mqtt#funcDetectMotion"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcGetBrightness"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcLed_1Color"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcLed_1Off"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#funcLed_1On"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasOperation" : [ {
+    "@id" : "http://yang-netconf-mqtt#opMqttLed_1Color"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#opMqttLed_1Off"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#opMqttLed_1On"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasSubService" : [ {
+    "@id" : "http://yang-netconf-mqtt#servBrightness"
+  }, {
+    "@id" : "http://yang-netconf-mqtt#servMotion"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#uuidInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationInput" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasInput" : [ {
+    "@id" : "http://yang-netconf-mqtt#deviceUuid"
+  } ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasThingProperty" : [ {
+    "@id" : "http://yang-netconf-mqtt#uuidYangDesc"
+  } ]
+}, {
+  "@id" : "http://yang-netconf-mqtt#uuidYangDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://yang-netconf-mqtt#YangDescription" ],
+  "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasValue" : [ {
+    "@value" : "Target UUID for request"
+  } ]
+} ]

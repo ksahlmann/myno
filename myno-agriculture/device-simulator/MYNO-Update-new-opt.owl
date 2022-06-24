@@ -1,0 +1,1178 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "base": "http://yang-netconf-mqtt#",
+    "onem2m": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "onem2m:Command",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:ControllingFunctionality",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:Device",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:MeasuringFunctionality",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:Operation",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OperationInput",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OperationOutput",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OperationState",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:OutputDataPoint",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:Service",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:ThingProperty",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "onem2m:exposesCommand",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:exposesFunctionality",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasCommand",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasDataRestriction_pattern",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "onem2m:hasDataType",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasFunctionality",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "onem2m:hasInput",
+      "@type": "owl:ObjectProperty",
+      "rdfs:range": {
+        "@id": "onem2m:ThingProperty"
+      }
+    },
+    {
+      "@id": "onem2m:hasOperation",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasOperationState",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasOutput",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasOutputDataPoint",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasService",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasSubService",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasThingProperty",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "onem2m:hasValue",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "rdfs:ContainerMembershipProperty",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "http://yang-netconf-mqtt",
+      "@type": "owl:Ontology",
+      "owl:imports": [
+        {
+          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "@id": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "@id": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0"
+        }
+      ]
+    },
+    {
+      "@id": "base:YangDescription",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "onem2m:ThingProperty"
+      }
+    },
+    {
+      "@id": "base:cmdGetDeviceToken",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      }
+    },
+    {
+      "@id": "base:cmdPubUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": [
+        {
+          "@id": "base:inputUpdateImage"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ]
+    },
+    {
+      "@id": "base:cmdPubUpdateManifest",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": [
+        {
+          "@id": "base:input_1_AppId"
+        },
+        {
+          "@id": "base:input_2_LinkOffset"
+        },
+        {
+          "@id": "base:input_3_Hash"
+        },
+        {
+          "@id": "base:input_4_Size"
+        },
+        {
+          "@id": "base:input_5_Version"
+        },
+        {
+          "@id": "base:input_6_OldVersion"
+        },
+        {
+          "@id": "base:input_7_InnerSignature"
+        },
+        {
+          "@id": "base:input_8_DeviceNonce"
+        },
+        {
+          "@id": "base:input_9_OuterSignature"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ]
+    },
+    {
+      "@id": "base:cmdRelayOff",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      }
+    },
+    {
+      "@id": "base:cmdRelayOn",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Command"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      }
+    },
+    {
+      "@id": "base:descInputAppId",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "AnwendungsID der Zielplattform"
+    },
+    {
+      "@id": "base:descInputDeviceNonce",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Input device nonce"
+    },
+    {
+      "@id": "base:descInputHash",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Input Hash"
+    },
+    {
+      "@id": "base:descInputInnerSignature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "inner signature"
+    },
+    {
+      "@id": "base:descInputLinkOffset",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Input Link Offset"
+    },
+    {
+      "@id": "base:descInputOldVersion",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "old version"
+    },
+    {
+      "@id": "base:descInputOuterSignature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "outer signature"
+    },
+    {
+      "@id": "base:descInputSeqManifest",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Input for Manifest"
+    },
+    {
+      "@id": "base:descInputSize",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Size"
+    },
+    {
+      "@id": "base:descInputUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Update Image"
+    },
+    {
+      "@id": "base:descInputVersion",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "version"
+    },
+    {
+      "@id": "base:deviceCategory",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasValue": "SETUP-1"
+    },
+    {
+      "@id": "base:deviceDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "MQTT-Device identified by UUID"
+    },
+    {
+      "@id": "base:deviceUuid",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      },
+      "onem2m:hasValue": "%s"
+    },
+    {
+      "@id": "base:funcDescGetDeviceToken",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get Token for MYNO Update"
+    },
+    {
+      "@id": "base:funcDescMoist",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Get Moisture of Sensor"
+    },
+    {
+      "@id": "base:funcDescPubUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Publish Update Image"
+    },
+    {
+      "@id": "base:funcDescPubUpdateManifest",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Publish Update Manifest to Device"
+    },
+    {
+      "@id": "base:funcDescRelayOff",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Relay anschalten"
+    },
+    {
+      "@id": "base:funcDescRelayOn",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Relay ausschalten"
+    },
+    {
+      "@id": "base:funcDescTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Reads the Temperature from the enviroment"
+    },
+    {
+      "@id": "base:funcGetDeviceToken",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdGetDeviceToken"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescGetDeviceToken"
+      }
+    },
+    {
+      "@id": "base:funcGetMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescMoist"
+      }
+    },
+    {
+      "@id": "base:funcGetTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:MeasuringFunctionality"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescTemperature"
+      }
+    },
+    {
+      "@id": "base:funcPubUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdPubUpdateImage"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescPubUpdateImage"
+      }
+    },
+    {
+      "@id": "base:funcPubUpdateManifest",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdPubUpdateManifest"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescPubUpdateManifest"
+      }
+    },
+    {
+      "@id": "base:funcRelayOff",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdRelayOff"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescRelayOff"
+      }
+    },
+    {
+      "@id": "base:funcRelayOn",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ControllingFunctionality"
+      ],
+      "onem2m:hasCommand": {
+        "@id": "base:cmdRelayOn"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:funcDescRelayOn"
+      }
+    },
+    {
+      "@id": "base:hasSubStructure",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "base:inDpUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:InputDataPoint"
+      ],
+      "base:mqttTopic": "yang/update/image"
+    },
+    {
+      "@id": "base:inputUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propUpdateImage"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputUpdateImage"
+      }
+    },
+    {
+      "@id": "base:input_1_AppId",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propAppID"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputAppId"
+      }
+    },
+    {
+      "@id": "base:input_2_LinkOffset",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propLinkOffset"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputLinkOffset"
+      }
+    },
+    {
+      "@id": "base:input_3_Hash",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propHash"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputHash"
+      }
+    },
+    {
+      "@id": "base:input_4_Size",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propSize"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputSize"
+      }
+    },
+    {
+      "@id": "base:input_5_Version",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propVersion"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputVersion"
+      }
+    },
+    {
+      "@id": "base:input_6_OldVersion",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propOldVersion"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputOldVersion"
+      }
+    },
+    {
+      "@id": "base:input_7_InnerSignature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propInnerSignature"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputInnerSignature"
+      }
+    },
+    {
+      "@id": "base:input_8_DeviceNonce",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propDeviceNonce"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputDeviceNonce"
+      }
+    },
+    {
+      "@id": "base:input_9_OuterSignature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:propOuterSignature"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:descInputOuterSignature"
+      }
+    },
+    {
+      "@id": "base:mqttMethod",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "base:mqttTopic",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "base:myDevice",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Device"
+      ],
+      "onem2m:hasFunctionality": [
+        {
+          "@id": "base:funcGetDeviceToken"
+        },
+        {
+          "@id": "base:funcGetMoisture"
+        },
+        {
+          "@id": "base:funcGetTemperature"
+        },
+        {
+          "@id": "base:funcPubUpdateImage"
+        },
+        {
+          "@id": "base:funcPubUpdateManifest"
+        },
+        {
+          "@id": "base:funcRelayOff"
+        },
+        {
+          "@id": "base:funcRelayOn"
+        }
+      ],
+      "onem2m:hasService": {
+        "@id": "base:servNetconf"
+      },
+      "onem2m:hasThingProperty": [
+        {
+          "@id": "base:deviceCategory"
+        },
+        {
+          "@id": "base:deviceDesc"
+        },
+        {
+          "@id": "base:deviceUuid"
+        }
+      ]
+    },
+    {
+      "@id": "base:opDescLedState",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "error",
+        "nothing to do",
+        "successful"
+      ]
+    },
+    {
+      "@id": "base:opDescState",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "10 successful",
+        "11 nothing to do",
+        "12 error",
+        "20 manifest not valid",
+        "21 wrong app id",
+        "22 invalid nonce",
+        "23 outer sign invalid",
+        "24 inner sign invalid",
+        "25 invalid version number",
+        "26 saveslot in use",
+        "27 image too big",
+        "28 image invalid"
+      ]
+    },
+    {
+      "@id": "base:opGetDeviceToken",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdGetDeviceToken"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "GET-DEVICE-TOKEN",
+      "base:mqttTopic": "yang/update/token"
+    },
+    {
+      "@id": "base:opLedState",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationState"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "ERROR",
+        "NOOP",
+        "OK"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:opDescLedState"
+      }
+    },
+    {
+      "@id": "base:opMqttPubUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdPubUpdateImage"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:inputUpdateImage"
+      },
+      "onem2m:hasInputDataPoint": {
+        "@id": "base:inDpUpdateImage"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "PUB-UPDATE-IMAGE",
+      "base:mqttTopic": "yang/update"
+    },
+    {
+      "@id": "base:opMqttPubUpdateManifest",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdPubUpdateManifest"
+      },
+      "onem2m:hasInput": [
+        {
+          "@id": "base:input_1_AppId"
+        },
+        {
+          "@id": "base:input_2_LinkOffset"
+        },
+        {
+          "@id": "base:input_3_Hash"
+        },
+        {
+          "@id": "base:input_4_Size"
+        },
+        {
+          "@id": "base:input_5_Version"
+        },
+        {
+          "@id": "base:input_6_OldVersion"
+        },
+        {
+          "@id": "base:input_7_InnerSignature"
+        },
+        {
+          "@id": "base:input_8_DeviceNonce"
+        },
+        {
+          "@id": "base:input_9_OuterSignature"
+        },
+        {
+          "@id": "base:uuidInput"
+        }
+      ],
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "PUB-UPDATE-MANIFEST",
+      "base:mqttTopic": "yang/update/manifest"
+    },
+    {
+      "@id": "base:opMqttRelayOff",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdRelayOff"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "relayOff",
+      "base:mqttTopic": "relay"
+    },
+    {
+      "@id": "base:opMqttRelayOn",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Operation"
+      ],
+      "onem2m:exposesCommand": {
+        "@id": "base:cmdRelayOn"
+      },
+      "onem2m:hasInput": {
+        "@id": "base:uuidInput"
+      },
+      "onem2m:hasOperationState": {
+        "@id": "base:opState"
+      },
+      "base:mqttMethod": "relayOn",
+      "base:mqttTopic": "relay"
+    },
+    {
+      "@id": "base:opState",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationState"
+      ],
+      "onem2m:hasDataRestriction_pattern": [
+        "10_OK",
+        "11_NOOP",
+        "12_ERROR",
+        "20_MANIFEST-NOT-VALID",
+        "21_WRONG-APP-ID",
+        "22_INVALID-NONCE",
+        "23_OUTER-SIGN-INVALID",
+        "24_INNER-SIGN-INVALID",
+        "25_INVALID-VERSIONNR",
+        "26_SAVESLOT-IN-USE",
+        "27_IMAGE-TOO-BIG",
+        "28_IMAGE-INVALID"
+      ],
+      "onem2m:hasThingProperty": {
+        "@id": "base:opDescState"
+      }
+    },
+    {
+      "@id": "base:outDpMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "base:mqttTopic": "sensor/moisture/%s"
+    },
+    {
+      "@id": "base:outDpTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OutputDataPoint"
+      ],
+      "base:mqttTopic": "sensor/temperature/%s"
+    },
+    {
+      "@id": "base:propAppID",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "base:propDeviceNonce",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:propHash",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "base:propInnerSignature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "base:propLinkOffset",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:propOldVersion",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:propOuterSignature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "base:propSize",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:propUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "base:propVersion",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:ThingProperty"
+      ],
+      "onem2m:hasDataType": {
+        "@id": "xsd:int"
+      }
+    },
+    {
+      "@id": "base:rdf:_1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_2",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_3",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_4",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_5",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_6",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_7",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_8",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:rdf:_9",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:member"
+      }
+    },
+    {
+      "@id": "base:servGetDeviceToken",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcGetDeviceToken"
+      },
+      "onem2m:hasOperation": {
+        "@id": "base:opGetDeviceToken"
+      }
+    },
+    {
+      "@id": "base:servMoisture",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcGetMoisture"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "base:outDpMoisture"
+      }
+    },
+    {
+      "@id": "base:servNetconf",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": [
+        {
+          "@id": "base:funcRelayOff"
+        },
+        {
+          "@id": "base:funcRelayOn"
+        }
+      ],
+      "onem2m:hasOperation": [
+        {
+          "@id": "base:opMqttRelayOff"
+        },
+        {
+          "@id": "base:opMqttRelayOn"
+        }
+      ],
+      "onem2m:hasSubService": [
+        {
+          "@id": "base:servGetDeviceToken"
+        },
+        {
+          "@id": "base:servMoisture"
+        },
+        {
+          "@id": "base:servPubUpdateImage"
+        },
+        {
+          "@id": "base:servPubUpdateManifest"
+        },
+        {
+          "@id": "base:servTemperature"
+        }
+      ]
+    },
+    {
+      "@id": "base:servPubUpdateImage",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcPubUpdateImage"
+      },
+      "onem2m:hasOperation": {
+        "@id": "base:opMqttPubUpdateImage"
+      }
+    },
+    {
+      "@id": "base:servPubUpdateManifest",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcPubUpdateManifest"
+      },
+      "onem2m:hasOperation": {
+        "@id": "base:opMqttPubUpdateManifest"
+      }
+    },
+    {
+      "@id": "base:servTemperature",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:Service"
+      ],
+      "onem2m:exposesFunctionality": {
+        "@id": "base:funcGetTemperature"
+      },
+      "onem2m:hasOutputDataPoint": {
+        "@id": "base:outDpTemperature"
+      }
+    },
+    {
+      "@id": "base:uuidInput",
+      "@type": [
+        "owl:NamedIndividual",
+        "onem2m:OperationInput"
+      ],
+      "onem2m:hasInput": {
+        "@id": "base:deviceUuid"
+      },
+      "onem2m:hasThingProperty": {
+        "@id": "base:uuidYangDesc"
+      }
+    },
+    {
+      "@id": "base:uuidYangDesc",
+      "@type": [
+        "owl:NamedIndividual",
+        "base:YangDescription"
+      ],
+      "onem2m:hasValue": "Target UUID for request"
+    }
+  ]
+}
