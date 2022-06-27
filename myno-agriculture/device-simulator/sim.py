@@ -37,7 +37,7 @@ UPDATE_TOPIC = 'yang/config/update'
 
 CMD_TOPIC = 'led/' + DEVICE_UUID_1
 
-SENSOR_TOPIC_1 = 'sensor/brightness/' + DEVICE_UUID_1
+SENSOR_TOPIC_1 = 'sensor/temperature/temperature_1/' + DEVICE_UUID_8
 
 RESPONSE_TOPIC = 'response/' + DEVICE_UUID_1
 
@@ -184,8 +184,8 @@ if __name__ == "__main__":
     #mqtt_client.publish(DELETE_TOPIC, DEVICE_UUID_1)
     #print("Device 1 delete ")
 
-    #sensor_handler = threading.Thread(target=sensor_loop)
-    #sensor_handler.start()
+    sensor_handler = threading.Thread(target=sensor_loop)
+    sensor_handler.start()
 
     mqtt_client.loop_start()
-    #sensor_handler.join()
+    sensor_handler.join()

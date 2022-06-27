@@ -5,8 +5,11 @@ import logging
 
 from rdflib import Graph
 from rdflib.plugins.sparql import prepareQuery
-from rdflib.plugin import register, Parser
-register('json-ld', Parser, 'rdflib_jsonld.parser', 'JsonLDParser')
+#from rdflib.plugin import register, Parser
+#register('json-ld', Parser, 'rdflib_jsonld.parser', 'JsonLDParser')
+import rdflib.plugin
+rdflib.plugin.register("application/ld+json", rdflib.plugin.Parser, "rdflib.plugins.parsers.jsonld", "JsonLDParser")
+rdflib.plugin.register("json-ld", rdflib.plugin.Parser, "rdflib.plugins.parsers.jsonld", "JsonLDParser")
 
 logger = logging.getLogger("json-generator")
 NC_DEBUG = False

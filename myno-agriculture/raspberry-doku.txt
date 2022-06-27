@@ -17,7 +17,7 @@ Setup Raspberry Pi 3B for MYNO
 -- pip3 install netconf (2.1)
 -- pip3 install ncclient (0.6.7)
 -- pip3 install paho-mqtt (1.5.0 for MQTT 3.1.1)
--- pip3 install rdflib (rdflib 5.0)
+-- pip3 install rdflib (rdflib 6.0)
 -- pip3 install pyang (pyang 2.4)
 -- pip3 install rdflib-jsonld (0.5)
 -- add fix from Sahlmann to rdflib-json in file util.py 
@@ -32,7 +32,7 @@ Setup Raspberry Pi 3B for MYNO
 -- python3.7 netconf_server.py 
 
 - install missing modules for webclient:
--- pip3 install flask_mqtt
+-- pip3 install flask_mqtt (1.1.2)
 - start webclient
 -- python3.7 __init.py__
 - call in webbrowser

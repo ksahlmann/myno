@@ -12,8 +12,11 @@ from optparse import OptionParser
 from io import StringIO
 from rdflib import Graph
 from rdflib.plugins.sparql import prepareQuery
-from rdflib.plugin import register, Parser
-register('json-ld', Parser, 'rdflib_jsonld.parser', 'JsonLDParser')
+import rdflib.plugin
+#rdflib.plugin.register('ld+json', rdflib.plugin.Parser, 'rdflib_jsonld.parser', 'JsonLDParser')
+
+rdflib.plugin.register("application/ld+json", rdflib.plugin.Parser, "rdflib.plugins.parsers.jsonld", "JsonLDParser")
+rdflib.plugin.register("json-ld", rdflib.plugin.Parser, "rdflib.plugins.parsers.jsonld", "JsonLDParser")
 
 logger = logging.getLogger("yang-generator")
 NC_DEBUG = False
